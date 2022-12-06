@@ -7,7 +7,7 @@ import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 const Footer = () => {
   return (
     <>
-      <footer className="bg-yellow-500">
+      <footer className="bg-yellow-500 ">
         <div className="grid grid-cols-2  gap-8 py-8 px-6 md:grid-cols-4">
           <div>
             <h2 className="mb-6 text-sm font-semibold text-white uppercase">
