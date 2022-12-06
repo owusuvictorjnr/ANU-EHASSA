@@ -31,6 +31,7 @@ export const myData = {
     },
 
     {
+      slug: 'bme',
       name: 'biomedical engineering',
       image: '/images/main.jpg',
     },
