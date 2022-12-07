@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <div>
-      <div className="shadow-xl h-45  fixed top-0 z-20 left-0 right-0 bg-yellow-500  flex justify-between capitalize text-1xl">
+      <div className="shadow-xl h-45  fixed top-0 z-20 left-0 right-0  bg-yellow-500  flex justify-between capitalize text-1xl">
         <div className="flex">
           <Link href="/home">
             <Image
@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className=" mx-5">
             <div className=" pt-8  text-2xl text-blue-900 font-serif flex-auto justify-end item-center">
               <ul className="space-x-5 mb-4  flex justify-end items-end lg:justify-end ">
-                <Link href="/home" className="cursor-pointer">
+                <Link href="/" className="cursor-pointer">
                   <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
                     home
                   </li>
@@ -46,11 +46,11 @@ const Navbar = () => {
                   </li>
                 </Link>
 
-                <Link href="/departments" className="cursor-pointer">
+                {/* <Link href="/departments" className="cursor-pointer">
                   <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
                     departments
                   </li>
-                </Link>
+                </Link> */}
 
                 <Link href="/login" className="cursor-pointer">
                   <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
