@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Layout from './Layout';
 import { myData } from '../utils/data';
 
 const HomeItem = () => {
@@ -11,27 +10,27 @@ const HomeItem = () => {
 
         {/* h-[calc(100vh_-_144px)] */}
       </div>
-      <div className='bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500'/>
-      <div className='divide-y-yellow-600' />
+      <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500" />
+      <div className="divide-y-yellow-600" />
       <div
         className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem]  
       rounded-lg border border-gray-100 shadow px-4
       "
       >
-        {myData.homeScreens.map((home, _index) => {
+        {myData.homeScreens.map((departments, _index) => {
           return (
             <div className="">
-              <Link href={`/home/${home.slug}`} className="">
+              <Link href={`/departments/${departments.slug}`} className="">
                 <img
-                  src={home.image}
-                  alt={home.name}
+                  src={departments.image}
+                  alt={departments.name}
                   className="rounded-md   h-[20rem] w-[30rem] mb-5 mt-[3rem] block border border-gray-100 shadow-md "
                 />
                 <div
                   key={_index.slug}
                   className="text-2xl text-black/80 font-serif capitalize"
                 >
-                  {home.name}
+                  {departments.name}
                 </div>
               </Link>
               <button className="bg-amber-300 rounded-md py-2 px-4 outline-none hover:bg-amber-400 active:bg-amber-500 text-1xl text-black/60 font-serif font-semibold capitalize">
