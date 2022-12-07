@@ -39,7 +39,7 @@ const Footer = () => {
             <ul className="text-blue-900 ">
               <li className="mb-4">
                 <Link href="" className="hover:underline">
-                  LiknkedIn
+                  LinkedIn
                 </Link>
               </li>
 
@@ -102,7 +102,8 @@ const Footer = () => {
         </div>
         <div className="py-6 px-4 bg-blue-900  md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-            &copy; 2022 <Link href="https://vitechsolutions.com/">Vitech Solutions™</Link>.
+            &copy; 2022{' '}
+            <Link href="https://vitechsolutions.com/">Vitech Solutions™</Link>.
             All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
