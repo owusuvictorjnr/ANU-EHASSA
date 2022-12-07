@@ -62,45 +62,52 @@ export const myData = {
 
   depExe: [
     {
-      name: 'computer science',
+      slug: 'cs',
+      name: 'Owusu Victor',
       image: '/images/main.jpg',
       position: 'president',
     },
 
     {
-      vicePresident: 'computer science',
+      name: 'Michallina Appiah',
       image: '/images/main.jpg',
       position: 'vice president',
     },
 
     {
-      secretary: 'computer science',
-      image: '/images/main.jpg',
-      position: 'porter',
-    },
-
-    {
-      financialSec: 'computer science',
+      name: 'Nana esi',
       image: '/images/main.jpg',
       position: 'secretary',
     },
 
     {
-      porter: 'computer science',
+      name: 'benedicta menu',
       image: '/images/main.jpg',
       position: 'financial secretary',
     },
 
     {
-      name: 'computer science',
+      name: 'odikro isaac',
+      image: '/images/main.jpg',
+      position: 'porter',
+    },
+
+    {
+      name: 'ebenezer quinoo',
       image: '/images/main.jpg',
       position: 'organizer',
     },
 
     {
-      name: 'computer science',
+      name: 'mr raphal emmanuel kofi',
       image: '/images/main.jpg',
       position: 'patron',
+    },
+
+    {
+      name: 'dr theophelous oware',
+      image: '/images/main.jpg',
+      position: 'h.o.d',
     },
   ],
 
