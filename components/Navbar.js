@@ -18,7 +18,7 @@ const Navbar = () => {
               //   layout="responsive"
             />
           </Link>
-          <Link href="/home" className="cursor-poniter">
+          <Link href="/" className="cursor-poniter">
             <h2 className="mx-3  py-8 uppercase text-5xl text-blue-900 font-serif flex justify-start ">
               ehassa
             </h2>
