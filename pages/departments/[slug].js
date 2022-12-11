@@ -1,8 +1,8 @@
-import React from 'react';
-import { myData } from '../../utils/data';
-import Router, { useRouter } from 'next/router';
-import Layout from '../../components/Layout';
-import Link from 'next/link';
+import React from "react";
+import { myData } from "../../utils/data";
+import Router, { useRouter } from "next/router";
+import Layout from "../../components/Layout";
+import Link from "next/link";
 
 const HomeScreen = () => {
   const router = useRouter();
@@ -18,8 +18,18 @@ const HomeScreen = () => {
 
   return (
     <Layout title={departments.name}>
+      <div className="mt-[7rem]">
+        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
+          <h2> about cessa </h2>
+        </div>
+        <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
+        <div className="bg-blue-500 min-h-[20rem]">
+          TODO: loreVeniam culpa et proident reprehenderit sunt proident dolore
+          eu nisi pariatur.
+        </div>
+      </div>
       <div>
-        <div className="mt-[7rem]">
+        <div className="mt-[2rem]">
           {/* <div className="">
           <Link href="/">back home</Link>
         </div> */}
@@ -30,11 +40,7 @@ const HomeScreen = () => {
         </div>
         <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
         <div className="divide-y-yellow-600" />
-        <div
-          className="grid  grid-cols-1 lg:grid-cols-5 md:grid-cols-2 mb-5 
-      rounded-lg border border-gray-100 shadow md:pl-[9rem] pr-20 gap-5  sticky top-0
-      "
-        >
+        <div className="grid  grid-cols-1 lg:grid-cols-5 md:grid-cols-2 mb-5 rounded-lg border border-gray-100 shadow md:pl-[9rem] pr-20 gap-5  sticky top-0">
           {myData.depExe.map((departmentExe, _index) => {
             return (
               <div className="">
@@ -59,22 +65,74 @@ const HomeScreen = () => {
           })}
         </div>
       </div>
-
       <div className=" mt-[2rem] min-h-[20rem]">
-        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
+        <div className="bg-yellow-600 py-2 px-4 block uppercase text-3xl tracking-wide font-serif  ">
           <h1>courses</h1>
         </div>
         <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
 
-        <div className="capitalize text-2xl font-serif">
-          <h3 className="flex justify-between px-5">
-            degree courses 
-            
-          </h3>
+        <div className="capitalize text-2xl font-serif flex ">
+          <div className="flex space-x-10 gap-[13rem] ">
+            <h3 className="bg-red-500 h-8  w-full">degree courses</h3>
+            <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
+
+            <div className="flex gap-[7rem]">
+              <h3 className="flex justify-center ">requirement</h3>
+              <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
+            </div>
+
+            <div className="flex gap-[7rem]">
+              <h3 className="flex justify-center ">deploma courses</h3>
+              <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
+            </div>
+
+            <div className="flex gap-[7rem]">
+              <h3 className="flex justify-center ">requirement</h3>
+              <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="">
+        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
+          <h2> programs for the semester </h2>
+        </div>
+        <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
+        <div className="bg-blue-500 min-h-[20rem] mb-4">
+          TODO: loreVeniam culpa et proident reprehenderit sunt proident dolore
+          eu nisi pariatur.
+        </div>
+      </div>
+
+      <div className="">
+        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
+          <h2> associations </h2>
+        </div>
+        <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
+        <div className=" min-h-[20rem] mb-4">
+          <ul className="text-2xl font-serif px-4 py-8 block capitalize space-y-8 text-black/70 ">
+            <li className="bg-blue-200/50">google developer student clubs</li>
+            <li className="bg-blue-200">microsoft students academy</li>
+            <li className="bg-blue-200/50">huawei ICT academy </li>
+            <li className="bg-blue-200">ingressive for good</li>
+            <li className="bg-blue-200/50">
+              computer science and engineering association of ghana
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="">
+        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
+          <h2> contact us </h2>
+        </div>
+        <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
+        <div className="bg-blue-500 min-h-[20rem] mb-4">
+          TODO: loreVeniam culpa et proident reprehenderit sunt proident dolore
+          eu nisi pariatur.
         </div>
       </div>
     </Layout>
   );
 };
-
 export default HomeScreen;
