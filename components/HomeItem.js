@@ -13,10 +13,7 @@ const HomeItem = () => {
       <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500" />
       <div className="divide-y-yellow-600" />
       <div
-        className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem]  
-      rounded-lg border border-gray-100 shadow px-4
-      "
-      >
+        className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4">
         {myData.homeScreens.map((departments, _index) => {
           return (
             <div className="">
