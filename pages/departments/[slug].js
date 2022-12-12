@@ -1,8 +1,8 @@
-import React from "react";
-import { myData } from "../../utils/data";
-import Router, { useRouter } from "next/router";
-import Layout from "../../components/Layout";
-import Link from "next/link";
+import React from 'react';
+import { myData } from '../../utils/data';
+import Router, { useRouter } from 'next/router';
+import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 const HomeScreen = () => {
   const router = useRouter();
@@ -70,8 +70,26 @@ const HomeScreen = () => {
           <h1>courses</h1>
         </div>
         <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
-
-        <div className="capitalize text-2xl font-serif flex ">
+        <div className="grid md:grid-cols-4 md:gap-10">
+          <div className="overflow-x-auto md:col-span-3">
+            <table className="min-w-full">
+              <thead className="border-b">
+                <tr>
+                  <th className="px-5 text-left">degree courses</th>
+                  <th className="px-5 text-left">requirement</th>
+                  <th className="px-5 text-left">diploma courses</th>
+                  <th className="px-5 text-left">requirement</th>
+                  {/* <th className="px-5 text-left">Name</th> */}
+                </tr>
+              </thead>
+            </table>
+            <tbody>
+              <tr>hello</tr>
+              <td>hello</td>
+            </tbody>
+          </div>
+        </div>
+        {/* <div className="capitalize text-2xl font-serif flex ">
           <div className="flex space-x-10 gap-[13rem] ">
             <h3 className="bg-red-500 h-8  w-full">degree courses</h3>
             <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
@@ -91,7 +109,7 @@ const HomeScreen = () => {
               <div className="bg-black/70 h-[15rem] w-1  mb-2 py-48 " />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="">
         <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
