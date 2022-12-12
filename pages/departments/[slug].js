@@ -1,8 +1,8 @@
-import React from 'react';
-import { myData } from '../../utils/data';
-import Router, { useRouter } from 'next/router';
-import Layout from '../../components/Layout';
-import Link from 'next/link';
+import React from "react";
+import { myData } from "../../utils/data";
+import Router, { useRouter } from "next/router";
+import Layout from "../../components/Layout";
+import Link from "next/link";
 
 const HomeScreen = () => {
   const router = useRouter();
@@ -73,18 +73,18 @@ const HomeScreen = () => {
         <div className="grid md:grid-cols-4 md:gap-10">
           <div className="overflow-x-auto md:col-span-3">
             <table className="min-w-full">
-              <thead className="border-b">
+              <thead className="border-b w-screen">
                 <tr>
                   <th className="px-5 text-left">degree courses</th>
-                  <th className="px-5 text-left">requirement</th>
-                  <th className="px-5 text-left">diploma courses</th>
-                  <th className="px-5 text-left">requirement</th>
+                  <th className="px-5 text-center">requirement</th>
+                  <th className="px-5 text-right">diploma courses</th>
+                  <th className="px-5 text-center">requirement</th>
                   {/* <th className="px-5 text-left">Name</th> */}
                 </tr>
               </thead>
             </table>
             <tbody>
-              <tr>hello</tr>
+              <tr className="px-4">hello</tr>
               <td>hello</td>
             </tbody>
           </div>
