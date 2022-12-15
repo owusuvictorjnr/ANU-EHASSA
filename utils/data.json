@@ -1,0 +1,206 @@
+{
+  "cs": {
+    "slug": "cs",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security"
+    ],
+    "executives": [
+      [
+        {
+          "name": "owusu victor",
+          "image": "/images/main.jpg",
+          "position": "president"
+        },
+        {
+          "name": "michillina",
+          "image": "/images/main.jpg",
+          "position": "president"
+        },
+
+        {
+          "name": "eben",
+          "image": "/images/main.jpg",
+          "position": "organizer"
+        },
+
+        {
+          "name": "odikro",
+          "image": "/images/main.jpg",
+          "position": "portal"
+        }
+      ]
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  },
+  "ce": {
+    "slug": "ce",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security",
+      "engineering maths"
+    ],
+    "executives": [
+      "owusu victor",
+      "appiah michallina",
+      "nana esi",
+      "odikro",
+      "quinoo ebenezer",
+      "mr. raphal emmenuel kofi",
+      "dr. theophelous oware"
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  },
+  "bme": {
+    "slug": "bme",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security"
+    ],
+    "executives": [
+      "owusu victor",
+      "appiah michallina",
+      "nana esi",
+      "odikro",
+      "quinoo ebenezer",
+      "mr. raphal emmenuel kofi",
+      "dr. theophelous oware"
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  },
+  "nursing": {
+    "slug": "nursing",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security"
+    ],
+    "executives": [
+      "owusu victor",
+      "appiah michallina",
+      "nana esi",
+      "odikro",
+      "quinoo ebenezer",
+      "mr. raphal emmenuel kofi",
+      "dr. theophelous oware"
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  },
+  "og": {
+    "slug": "og",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security"
+    ],
+    "executives": [
+      "owusu victor",
+      "appiah michallina",
+      "nana esi",
+      "odikro",
+      "quinoo ebenezer",
+      "mr. raphal emmenuel kofi",
+      "dr. theophelous oware"
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  },
+  "ece": {
+    "slug": "ece",
+    "programmes": "computer science",
+    "courses": [
+      "c++",
+      "networking",
+      "java",
+      "c",
+      "database management system",
+      "artificial inteligence",
+      "data science",
+      "web tech",
+      "cyber security"
+    ],
+    "executives": [
+      "owusu victor",
+      "appiah michallina",
+      "nana esi",
+      "odikro",
+      "quinoo ebenezer",
+      "mr. raphal emmenuel kofi",
+      "dr. theophelous oware"
+    ],
+    "associations": [
+      "google developer student clubs",
+      "huawei ICT academy",
+      "microsoft student academy",
+      "ingressive for good",
+      "computer science & engineering association of ghana"
+    ]
+  }
+}
