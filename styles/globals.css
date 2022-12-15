@@ -18,7 +18,25 @@ a {
 * {
   box-sizing: border-box;
 }
-.main{
-  @apply bg-[#fff] 
+.main {
+  @apply bg-[#fff];
 }
 
+.sh-underline::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 2px;
+  display: block;
+  background-color: deeppink;
+}
+
+
+.sh-underline1::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 2px;
+  display: block;
+  background-color: blue;
+}
