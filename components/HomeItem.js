@@ -1,19 +1,29 @@
-import React from 'react';
-import Link from 'next/link';
-import { myData } from '../utils/data';
+import React from "react";
+import Link from "next/link";
+import { myData } from "../utils/data";
+import SubHeaders from "./SubHeaders";
 
 const HomeItem = () => {
   return (
     <div className="mt-[7rem]">
-      <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  ">
-        <h3> our departments</h3>
-
-        {/* h-[calc(100vh_-_144px)] */}
+      <div className="">
+        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  flex justify-center text-blue-900">
+          <h3>
+            welcome to all nations university school of engineering koforidua
+            ghana west africa
+          </h3>
+        </div>
+        <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
+        <div className=" min-h-[50rem] p-2 ">TODO: Landing Page</div>
       </div>
-      <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500" />
+
+      <SubHeaders label="our departments" />
+
+      {/* h-[calc(100vh_-_144px)] */}
+
+      <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
       <div className="divide-y-yellow-600" />
-      <div
-        className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4 pb-5">
         {myData.homeScreens.map((departments, _index) => {
           return (
             <div className="">
