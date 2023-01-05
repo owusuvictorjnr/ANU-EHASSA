@@ -1,28 +1,31 @@
-import React from "react";
-import Link from "next/link";
-import { myData } from "../utils/data";
-import SubHeaders from "./SubHeaders";
+import React from 'react';
+import Link from 'next/link';
+import { myData } from '../utils/data';
+import SubHeaders from './SubHeaders';
+import Image from 'next/image';
+import { BsArrowRightShort } from 'react-icons/bs';
 
 const HomeItem = () => {
   return (
     <div className="mt-[7rem]">
       <div className="">
-        <div className="bg-yellow-600 py-2 px-4 uppercase text-3xl tracking-wide font-serif  flex justify-center text-blue-900">
-          <h3>
-            welcome to all nations university school of engineering koforidua
-            ghana west africa
-          </h3>
+        <div className="bg-yellow-600  px-4  uppercase text-3xl tracking-wide font-serif  flex justify-center text-blue-900 sticky top-[7rem]">
+          <div className="sticky top-[14rem]">
+            <SubHeaders label="welcome to all nations university school of engineering koforidua ghana west africa" />
+            <div className="bg-blue-500 h-[0.1rem]  divide-red-500 sh-underline" />
+          </div>
         </div>
-        <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
+
         <div className=" min-h-[50rem] p-2 ">TODO: Landing Page</div>
       </div>
-
-      <SubHeaders label="our departments" />
+      <div className="sticky top-[7rem]">
+        <SubHeaders label="our departments" />
+        <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
+        <div className="divide-y-yellow-600" />
+      </div>
 
       {/* h-[calc(100vh_-_144px)] */}
 
-      <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
-      <div className="divide-y-yellow-600" />
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4 pb-5">
         {myData.homeScreens.map((departments, _index) => {
           return (
@@ -47,35 +50,53 @@ const HomeItem = () => {
           );
         })}
       </div>
+      <div>
+        <div className="sticky top-[7rem]">
+          <SubHeaders label="about" />
+          <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
+        </div>
+        <div className="mb-5 ">
+          <div className="bg-blue-500 min-h-[40rem] ">
+            <div className="text-3xl capitalize font-serif text-yellow-400 px-8 py-5 pt-40 space-y-5 space-x-10">
+              <div className="flex gap-2">
+                <Image
+                  src="/logo/anumain.png"
+                  alt="logo"
+                  height="50"
+                  width="50"
+                  className="rounded-full bg-yellow-600 "
+                />
+                <em>all nations </em> university
+              </div>
+              <div className="grid grid-cols-1 lg:flex text-4xl">
+                <span className=""> about our</span> university
+              </div>
+            </div>
+
+            <div className="flex justify-end ">
+              <div>
+                <p className="truncate overflow-hidden">
+                  We are one of the largest, most diverse universities in the
+                  ghana with over 5,000 students in ghana, and a further 1,000
+                  studying across 20 countries for all nations University. all
+                  nations University was established by dr. donkor in 1983 for
+                  the public benefit and it is recognized globally. Throughout
+                  our great history, all nations has offered access to a wide
+                  range of academic opportunities. As a world leader in higher
+                  education, the University has pioneered change in the sector.{' '}
+                </p>
+              </div>
+              <div>
+                <button>
+                  read more <BsArrowRightShort className="size={30}" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default HomeItem;
-
-// <>
-
-//   <div className="mb-5 mt-[8rem] block rounded-lg border border-gray-100 shadow-md">
-//     <Link href={`/home/${home.slug}`} className="">
-//       <img
-//         src={home.image}
-//         alt={home.name}
-//         // height="100"
-//         // width="100"
-//         // object-Fit="cover"
-//         className="rounded shadow"
-//       />
-//     </Link>
-
-//     <div className="flex flex-col items-center justify-center p-5">
-//       <Link href={`/home/${home.slug}`}>
-//         <h2 className="text-lg capitalize font-serif text-black/80">
-//           {home.name}
-//         </h2>
-//       </Link>
-//       <button className="bg-amber-300 py-2 px-4 outline-none hover:bg-amber-400 active:bg-amber-500">
-//         read more
-//       </button>
-//     </div>
-//   </div>
-// </>
