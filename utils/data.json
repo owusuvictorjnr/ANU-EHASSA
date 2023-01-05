@@ -23,7 +23,7 @@
         {
           "name": "michillina",
           "image": "/images/main.jpg",
-          "position": "president"
+          "position": "vice president"
         },
 
         {
@@ -51,7 +51,7 @@
     "slug": "ce",
     "programmes": "computer science",
     "courses": [
-      "c++",
+      "engineering math",
       "networking",
       "java",
       "c",
@@ -63,13 +63,28 @@
       "engineering maths"
     ],
     "executives": [
-      "owusu victor",
-      "appiah michallina",
-      "nana esi",
-      "odikro",
-      "quinoo ebenezer",
-      "mr. raphal emmenuel kofi",
-      "dr. theophelous oware"
+      {
+        "name": "owusu victor",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "michillina",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
+
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
+
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      }
     ],
     "associations": [
       "google developer student clubs",
@@ -83,7 +98,7 @@
     "slug": "bme",
     "programmes": "computer science",
     "courses": [
-      "c++",
+      "image processing",
       "networking",
       "java",
       "c",
@@ -94,13 +109,28 @@
       "cyber security"
     ],
     "executives": [
-      "owusu victor",
-      "appiah michallina",
-      "nana esi",
-      "odikro",
-      "quinoo ebenezer",
-      "mr. raphal emmenuel kofi",
-      "dr. theophelous oware"
+      {
+        "name": "toni",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "fati",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
+
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
+
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      }
     ],
     "associations": [
       "google developer student clubs",
@@ -112,9 +142,9 @@
   },
   "nursing": {
     "slug": "nursing",
-    "programmes": "computer science",
+    "programmes": "nursing",
     "courses": [
-      "c++",
+      "human anatomy",
       "networking",
       "java",
       "c",
@@ -125,13 +155,28 @@
       "cyber security"
     ],
     "executives": [
-      "owusu victor",
-      "appiah michallina",
-      "nana esi",
-      "odikro",
-      "quinoo ebenezer",
-      "mr. raphal emmenuel kofi",
-      "dr. theophelous oware"
+      {
+        "name": "michael",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "rose",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
+
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
+
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      }
     ],
     "associations": [
       "google developer student clubs",
@@ -143,9 +188,9 @@
   },
   "og": {
     "slug": "og",
-    "programmes": "computer science",
+    "programmes": "oil & gas",
     "courses": [
-      "c++",
+      "earth drilling",
       "networking",
       "java",
       "c",
@@ -156,13 +201,28 @@
       "cyber security"
     ],
     "executives": [
-      "owusu victor",
-      "appiah michallina",
-      "nana esi",
-      "odikro",
-      "quinoo ebenezer",
-      "mr. raphal emmenuel kofi",
-      "dr. theophelous oware"
+      {
+        "name": "king",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "grace",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
+
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
+
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      }
     ],
     "associations": [
       "google developer student clubs",
@@ -174,9 +234,9 @@
   },
   "ece": {
     "slug": "ece",
-    "programmes": "computer science",
+    "programmes": "electronic & comm engineering",
     "courses": [
-      "c++",
+      "mtn",
       "networking",
       "java",
       "c",
@@ -187,13 +247,28 @@
       "cyber security"
     ],
     "executives": [
-      "owusu victor",
-      "appiah michallina",
-      "nana esi",
-      "odikro",
-      "quinoo ebenezer",
-      "mr. raphal emmenuel kofi",
-      "dr. theophelous oware"
+      {
+        "name": "ralph",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "abigail",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
+
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
+
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      }
     ],
     "associations": [
       "google developer student clubs",
