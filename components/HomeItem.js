@@ -71,26 +71,29 @@ const HomeItem = () => {
               <div className="grid grid-cols-1 lg:flex text-4xl">
                 <span className=""> about our</span> university
               </div>
+              <div className="">
+                <div>
+                  <p className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-2 pb-8 ">
+                    <span>
+                      We are one of the largest, most diverse universities in the
+                      ghana with over 5,000 students in ghana, and a further 1,000
+                      studying across 20 countries for all nations University. all
+                      nations University was established by dr. donkor in 1983 for
+                      the public benefit and it is recognized globally. Throughout
+                      our great history, all nations has offered access to a wide
+                      range of academic opportunities. As a world leader in higher
+                      education, the University has pioneered change in the
+                      sector.
+                    </span>
+                  </p>
+                </div>
+                <div>
+                  <button>
+                    read more <BsArrowRightShort className="size={30}" />
+                  </button>
+                </div>
             </div>
 
-            <div className="flex justify-end ">
-              <div>
-                <p className="truncate overflow-hidden">
-                  We are one of the largest, most diverse universities in the
-                  ghana with over 5,000 students in ghana, and a further 1,000
-                  studying across 20 countries for all nations University. all
-                  nations University was established by dr. donkor in 1983 for
-                  the public benefit and it is recognized globally. Throughout
-                  our great history, all nations has offered access to a wide
-                  range of academic opportunities. As a world leader in higher
-                  education, the University has pioneered change in the sector.{' '}
-                </p>
-              </div>
-              <div>
-                <button>
-                  read more <BsArrowRightShort className="size={30}" />
-                </button>
-              </div>
             </div>
           </div>
         </div>
