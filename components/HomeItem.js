@@ -4,6 +4,10 @@ import { myData } from '../utils/data';
 import SubHeaders from './SubHeaders';
 import Image from 'next/image';
 import { BsArrowRightShort } from 'react-icons/bs';
+import { ImBooks } from 'react-icons/im';
+import { HiGlobeEuropeAfrica } from 'react-icons/hi2';
+import { TbCertificate } from 'react-icons/tb';
+import { FaUniversity } from 'react-icons/fa';
 
 const HomeItem = () => {
   return (
@@ -20,6 +24,7 @@ const HomeItem = () => {
           <div className=" min-h-[50rem] p-2 ">TODO: Landing Page</div>
         </div>
         <div className="sticky top-[7rem]">
+          {/*Departments*/}
           <SubHeaders label="our departments" />
           <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
           <div className="divide-y-yellow-600" />
@@ -51,6 +56,8 @@ const HomeItem = () => {
             );
           })}
         </div>
+
+        {/*About ANU*/}
         <div>
           <div className="sticky top-[7rem] z-50">
             <SubHeaders label="about" />
@@ -63,9 +70,9 @@ const HomeItem = () => {
                 alt="background image"
                 height="150"
                 width="150"
-                className="w-full min-h-[40rem] blur-[0.5rem] object-cover absolute mix-blend-multiply"
+                className="w-full h-[40rem] blur-[0.5rem] object-cover absolute mix-blend-multiply"
               />
-              <div className="text-3xl capitalize font-serif text-yellow-400 px-8 py-5 pt-40 space-y-5 space-x-10">
+              <div className="text-3xl capitalize font-serif text-yellow-400 px-8 py-5 pt-20 space-y-5 space-x-10">
                 <div className="flex gap-2">
                   <Image
                     src="/logo/anumain.png"
@@ -80,9 +87,9 @@ const HomeItem = () => {
                   <span className=""> about our</span> university
                 </div>
                 <div className="">
-                  <div>
-                    <p className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-2 pb-8 ">
-                      <span>
+                  <div className=" grid grid-cols-1 sm:grid-cols-2  gap-10 pt-2 pb-8 ">
+                    <p className="text-red-500 text-left flex justify-">
+                      <span className="text-left">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
                         further 1,000 studying across 20 countries for all
@@ -98,8 +105,35 @@ const HomeItem = () => {
                   </div>
                   <div>
                     <button>
-                      read more <BsArrowRightShort className="size={30}" />
+                      read more <BsArrowRightShort className="" size={40} />
                     </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-900 w-full min-h-[30rem] ">
+                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 lg:space-x-40 px-5 pt-10">
+                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif ">
+                    <ImBooks size={80} className="text-yellow-500" />
+                    <p>education services</p>
+                  </div>
+
+                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
+                    <HiGlobeEuropeAfrica
+                      size={80}
+                      className="text-yellow-500"
+                    />
+                    <p>international hubs</p>
+                  </div>
+
+                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
+                    <TbCertificate size={80} className="text-yellow-500" />
+                    <p>bacherkor's and master's</p>
+                  </div>
+
+                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
+                    <FaUniversity size={80} className="text-yellow-500" />
+                    <p>university life</p>
                   </div>
                 </div>
               </div>
