@@ -81,7 +81,7 @@ const HomeItem = () => {
                     width="50"
                     className="rounded-full bg-yellow-600 "
                   />
-                  <em>all nations </em> university
+                  <span>all nations </span> university
                 </div>
                 <div className="grid grid-cols-1 lg:flex text-4xl">
                   <span className=""> about our</span> university
@@ -115,7 +115,21 @@ const HomeItem = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 lg:space-x-40 px-5 pt-10">
                   <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif ">
                     <ImBooks size={80} className="text-yellow-500" />
-                    <p>education services</p>
+                    <h2>education services</h2>
+                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
+                      <p>
+                        We are one of the largest, most diverse universities in
+                        the ghana with over 5,000 students in ghana, and a
+                        further 1,000 studying across 20 countries for all
+                        nations University.
+                      </p>
+                      <button
+                        type=""
+                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
+                      >
+                        learn more
+                      </button>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
@@ -124,19 +138,77 @@ const HomeItem = () => {
                       className="text-yellow-500"
                     />
                     <p>international hubs</p>
+
+                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
+                      <p>
+                        We are one of the largest, most diverse universities in
+                        the ghana with over 5,000 students in ghana, and a
+                        further 1,000 studying across 20 countries for all
+                        nations University.
+                      </p>
+                      <button
+                        type=""
+                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
+                      >
+                        learn more
+                      </button>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
                     <TbCertificate size={80} className="text-yellow-500" />
                     <p>bacherkor's and master's</p>
+
+                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
+                      <p>
+                        We are one of the largest, most diverse universities in
+                        the ghana with over 5,000 students in ghana, and a
+                        further 1,000 studying across 20 countries for all
+                        nations University.
+                      </p>
+                      <button
+                        type=""
+                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
+                      >
+                        learn more
+                      </button>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
                     <FaUniversity size={80} className="text-yellow-500" />
                     <p>university life</p>
+
+                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
+                      <p>
+                        We are one of the largest, most diverse universities in
+                        the ghana with over 5,000 students in ghana, and a
+                        further 1,000 studying across 20 countries for all
+                        nations University.
+                      </p>
+                      <button
+                        type=""
+                        className="flex sm:text-yellow-300  hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
+                      >
+                        learn more
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/*News & Updates*/}
+
+          <div>
+            <div className="mb-5">
+              <div className="sticky top-[7rem] z-50">
+                <SubHeaders label="News & Updates" />
+                <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
+              </div>
+
+              <div className="min-h-[30rem]">hello</div>
             </div>
           </div>
         </div>
