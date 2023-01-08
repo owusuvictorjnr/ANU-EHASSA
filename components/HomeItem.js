@@ -8,6 +8,7 @@ import { ImBooks } from 'react-icons/im';
 import { HiGlobeEuropeAfrica } from 'react-icons/hi2';
 import { TbCertificate } from 'react-icons/tb';
 import { FaUniversity } from 'react-icons/fa';
+import DateTime from './DateTime';
 
 const HomeItem = () => {
   return (
@@ -208,7 +209,58 @@ const HomeItem = () => {
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
               </div>
 
-              <div className="min-h-[30rem]">hello</div>
+              <div className="min-h-[30rem]">
+                <div>
+                  <div className="lg:flex lg:justify-between grid grid-cols-1 ">
+                    <div className="w-full mb-5">
+                      <div className="py-2 px-10 mt-10 w-full ">
+                        <button
+                          type=""
+                          className="capitalize font-serif text-yellow-700 text-lg hover:text-blue-400"
+                        >
+                          read all news
+                        </button>
+                      </div>
+                      <div className="capitalize font-serif px-10">
+                        <Image
+                          src="/images/sir.jpg"
+                          alt="event picture"
+                          height="40"
+                          width="100"
+                          className="rounded-md w-[20rem] h-[10rem]"
+                        />
+                      </div>
+
+                      {/*Date and Time*/}
+                      <div className="mt-5 px-10 text-gray-500">
+                        <DateTime />
+                      </div>
+
+                      <div className="mt-5 px-10">
+                        <Link
+                          href="/"
+                          className=" cursor-pointer text-yellow-600 hover:text-amber-300 text-3xl "
+                        >
+                          Professor Albert joint research <br /> on mobile money
+                          in Tanzania
+                        </Link>
+                      </div>
+
+                      {/*left contenet of the same div */}
+                      <div className=''>
+                      <div className=''>
+                        
+                      hello
+                      </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-blue-500 w-full">
+                      <span>hello</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
