@@ -5,21 +5,19 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <div>
-      <div className="shadow-xl h-45  fixed top-0 z-20 left-0 right-0  bg-yellow-500  flex justify-between capitalize text-1xl">
+      <div className="shadow-xl h-[7rem]  fixed top-0 z-20 left-0 right-0  bg-yellow-500  flex justify-evenly capitalize text-1xl">
         <div className="flex">
           <Link href="/home">
             <Image
               src="/logo/ehassa.jpg"
               alt="cessa"
-              width="100"
-              height="100"
-              className="bg-red-200 rounded-full overflow-hidden text-center mx-1 py-1"
-              object-cover="cover"
-              //   layout="responsive"
+              width="80"
+              height="80"
+              className="bg-yellow-500 rounded-full  py-1 mt-3"
             />
           </Link>
           <Link href="/" className="cursor-poniter">
-            <h2 className="mx-3  py-8 uppercase text-5xl text-blue-900 font-serif flex justify-start ">
+            <h2 className="mx-3  py-8 uppercase text-3xl text-blue-900 font-serif flex justify-start ">
               ehassa
             </h2>
           </Link>
@@ -42,7 +40,7 @@ const Navbar = () => {
 
                 <Link href="/contact">
                   <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
-                    contact us
+                    contact
                   </li>
                 </Link>
 
