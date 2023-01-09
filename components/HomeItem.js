@@ -209,11 +209,11 @@ const HomeItem = () => {
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
               </div>
 
-              <div className="min-h-[30rem]">
+              <div className="min-h-[40rem]">
                 <div>
                   <div className="lg:flex lg:justify-between grid grid-cols-1 ">
-                    <div className="w-full mb-5">
-                      <div className="py-2 px-10 mt-10 w-full ">
+                    <div className="w-full mb-5  ">
+                      <div className="py-2 px-[15rem] mt-10 w-full ">
                         <button
                           type=""
                           className="capitalize font-serif text-yellow-700 text-lg hover:text-blue-400"
@@ -221,7 +221,7 @@ const HomeItem = () => {
                           read all news
                         </button>
                       </div>
-                      <div className="capitalize font-serif px-10">
+                      <div className="capitalize font-serif px-[15rem]">
                         <Image
                           src="/images/sir.jpg"
                           alt="event picture"
@@ -232,11 +232,11 @@ const HomeItem = () => {
                       </div>
 
                       {/*Date and Time*/}
-                      <div className="mt-5 px-10 text-gray-500">
+                      <div className="mt-5  text-gray-500 px-[15rem]">
                         <DateTime />
                       </div>
 
-                      <div className="mt-5 px-10">
+                      <div className="mt-5 px-[15rem]">
                         <Link
                           href="/"
                           className=" cursor-pointer text-yellow-600 hover:text-amber-300 text-3xl "
@@ -247,16 +247,17 @@ const HomeItem = () => {
                       </div>
 
                       {/*left contenet of the same div */}
-                      <div className=''>
-                      <div className=''>
-                        
-                      hello
-                      </div>
+                      <div className="min-h-[10rem] pt-10">
+                        <div className="bg-gray-200 h-[10rem]">
+                          TODO: Social media handles (swipper)
+                        </div>
                       </div>
                     </div>
 
+                    
+                    {/*Quick Links*/}
                     <div className="bg-blue-500 w-full">
-                      <span>hello</span>
+                      <div>hello</div>
                     </div>
                   </div>
                 </div>
