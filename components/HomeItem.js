@@ -254,10 +254,16 @@ const HomeItem = () => {
                       </div>
                     </div>
 
-                    
                     {/*Quick Links*/}
-                    <div className="bg-blue-500 w-full">
-                      <div>hello</div>
+                    <div className="w-full mb-5 ">
+                      <Image
+                        src="/logo/ehassa.jpg"
+                        alt="quick links"
+                        height="150"
+                        width="150"
+                        className="bg-white"
+                      />
+                      <div className="py-2 px-[15rem] mt-10 w-full">hello</div>
                     </div>
                   </div>
                 </div>
