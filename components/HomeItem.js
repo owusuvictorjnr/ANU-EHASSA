@@ -8,6 +8,7 @@ import { ImBooks } from 'react-icons/im';
 import { HiGlobeEuropeAfrica } from 'react-icons/hi2';
 import { TbCertificate } from 'react-icons/tb';
 import { FaUniversity } from 'react-icons/fa';
+import { HiOutlineLink } from 'react-icons/hi';
 import DateTime from './DateTime';
 
 const HomeItem = () => {
@@ -89,7 +90,7 @@ const HomeItem = () => {
                 </div>
                 <div className="">
                   <div className=" grid grid-cols-1 sm:grid-cols-2  gap-10 pt-2 pb-8 ">
-                    <p className="text-red-500 text-left flex justify-">
+                    <p className="text-red-500 text-left flex ">
                       <span className="text-left">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
@@ -203,7 +204,7 @@ const HomeItem = () => {
           {/*News & Updates*/}
 
           <div>
-            <div className="mb-5">
+            <div className="mb-5 relative">
               <div className="sticky top-[7rem] z-50">
                 <SubHeaders label="News & Updates" />
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
@@ -255,15 +256,18 @@ const HomeItem = () => {
                     </div>
 
                     {/*Quick Links*/}
-                    <div className="w-full mb-5 ">
-                      <Image
+                    <div className="w-full mb-5 min-h-[10rem] bg-blue-700">
+                      {/*<Image
                         src="/logo/ehassa.jpg"
                         alt="quick links"
                         height="150"
                         width="150"
-                        className="bg-white"
-                      />
-                      <div className="py-2 px-[15rem] mt-10 w-full">hello</div>
+                        className="bg-white w-full h-[10rem] blur-[0.5rem] object-cover absolute mix-blend-multiply "
+                      />*/}
+                      TODO: Background image
+                      <div className="py-2 px-[15rem] mt-10 w-full ">
+                        <HiOutlineLink /> quick links
+                      </div>
                     </div>
                   </div>
                 </div>
