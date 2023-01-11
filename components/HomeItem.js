@@ -204,7 +204,7 @@ const HomeItem = () => {
           {/*News & Updates*/}
 
           <div>
-            <div className="mb-5 relative">
+            <div className="mb-5 ">
               <div className="sticky top-[7rem] z-50">
                 <SubHeaders label="News & Updates" />
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
@@ -214,7 +214,7 @@ const HomeItem = () => {
                 <div>
                   <div className="lg:flex lg:justify-between grid grid-cols-1 ">
                     <div className="w-full mb-5  ">
-                      <div className="py-2 px-[15rem] mt-10 w-full ">
+                      <div className="py-2 px-[8rem] mt-10 w-full ">
                         <button
                           type=""
                           className="capitalize font-serif text-yellow-700 text-lg hover:text-blue-400"
@@ -222,7 +222,7 @@ const HomeItem = () => {
                           read all news
                         </button>
                       </div>
-                      <div className="capitalize font-serif px-[15rem]">
+                      <div className="capitalize font-serif px-[8rem]">
                         <Image
                           src="/images/sir.jpg"
                           alt="event picture"
@@ -233,11 +233,11 @@ const HomeItem = () => {
                       </div>
 
                       {/*Date and Time*/}
-                      <div className="mt-5  text-gray-500 px-[15rem]">
+                      <div className="mt-5  text-gray-500 px-[8rem]">
                         <DateTime />
                       </div>
 
-                      <div className="mt-5 px-[15rem]">
+                      <div className="mt-5 px-[8rem]">
                         <Link
                           href="/"
                           className=" cursor-pointer text-yellow-600 hover:text-amber-300 text-3xl "
@@ -256,7 +256,7 @@ const HomeItem = () => {
                     </div>
 
                     {/*Quick Links*/}
-                    <div className="w-full mb-5 min-h-[10rem] bg-blue-700">
+                    <div className="w-full mb-5 min-h-[10rem] bg-blue-900/90">
                       {/*<Image
                         src="/logo/ehassa.jpg"
                         alt="quick links"
@@ -265,8 +265,62 @@ const HomeItem = () => {
                         className="bg-white w-full h-[10rem] blur-[0.5rem] object-cover absolute mix-blend-multiply "
                       />*/}
                       TODO: Background image
-                      <div className="py-2 px-[15rem] mt-10 w-full ">
-                        <HiOutlineLink /> quick links
+                      <div className="py-2 px-[8rem] mt-10 w-full ">
+                        <div className="flex gap-5 text-white text-4xl capitalize font-bold ">
+                          <HiOutlineLink size={30} className="" />
+                          <h1>quick links </h1>
+                        </div>
+
+                        {/*Links*/}
+                        <div className="mt-10 capitalize text-yellow-600 text-2xl ">
+                          <div className="mt-10  hover:text-amber-500">
+                            <Link href="/">alumni & donors</Link>
+                          </div>
+                          <div className="w-[15rem] h-[0.1rem] bg-gray-200/30 mt-10" />
+
+                          <div className="mt-10  hover:text-amber-500">
+                            <Link href="/">sports calendar</Link>
+                          </div>
+                          <div className="w-[15rem] h-[0.1rem] bg-gray-200/30 mt-10" />
+
+                          <div className="mt-10  hover:text-amber-500">
+                            <Link href="/">all ANU events</Link>
+                          </div>
+                          <div className="w-[15rem] h-[0.1rem] bg-gray-200/30 mt-10" />
+
+                          <div className="mt-10  hover:text-amber-500">
+                            <Link href="/">partnership & out reach</Link>
+                          </div>
+                          <div className="w-[15rem] h-[0.1rem] bg-gray-200/30 mt-10" />
+
+                          <div className="mt-10  hover:text-amber-500">
+                            <Link href="/">academic programs</Link>
+                          </div>
+                          <div className="w-[15rem] h-[0.1rem] bg-gray-200/30 mt-10" />
+
+                          <div className="mt-10  hover:text-amber-500 mb-10 ">
+                            <Link href="/">tuition and fees</Link>
+                          </div>
+                        </div>
+                      </div>
+                      {/*Apply*/}
+                      <div className="bg-yellow-600 h-[10rem] pt-[2rem]">
+                        <div className="flex gap-2 justify-center items-center">
+                          <Link href="/">
+                            <Image
+                              src="/logo/anumain.png"
+                              alt="logo"
+                              height="50"
+                              width="50"
+                              className="rounded-full bg-yellow-600  mt-5 flex items-center"
+                            />
+                          </Link>
+                          <div className="text-5xl capitalize font-bold text-white hover:text-red-300">
+                            <Link href="/">
+                              apply to all nations university
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -274,6 +328,9 @@ const HomeItem = () => {
               </div>
             </div>
           </div>
+
+
+          hello
         </div>
       </div>
     </>
