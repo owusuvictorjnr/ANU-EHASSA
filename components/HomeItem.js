@@ -114,7 +114,7 @@ const HomeItem = () => {
               </div>
 
               <div className="bg-blue-900 w-full min-h-[30rem] ">
-                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 lg:space-x-40 px-5 pt-10">
+                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:space-x-40 px-5 pt-10">
                   <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif ">
                     <ImBooks size={80} className="text-yellow-500" />
                     <h2>education services</h2>
