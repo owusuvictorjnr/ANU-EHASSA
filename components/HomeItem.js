@@ -315,7 +315,7 @@ const HomeItem = () => {
                               className="rounded-full bg-yellow-600  mt-5 flex items-center"
                             />
                           </Link>
-                          <div className="text-5xl capitalize font-bold text-white hover:text-red-300">
+                          <div className="text-5xl capitalize font-bold text-white hover:text-blue-300">
                             <Link href="/">
                               apply to all nations university
                             </Link>
@@ -329,8 +329,24 @@ const HomeItem = () => {
             </div>
           </div>
 
+          {/*campus tour*/}
+          <div>
+            <div className="sticky top-[7rem] z-50">
+              <SubHeaders label="campus tour" />
+              <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
+            </div>
 
-          hello
+            <div className="bg-red-300 min-h-[40rem] mb-5">
+              <div className="pt-5">
+                <div>TODO: Video section</div>
+                <p>
+                  Take a tour in ANU and you will find the best university in
+                  the country. The video will take you to every places in this
+                  university.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
