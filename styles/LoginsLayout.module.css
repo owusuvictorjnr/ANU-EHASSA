@@ -1,0 +1,65 @@
+.imgStyle {
+  @apply bg-gradient-to-tr from-yellow-200 to-blue-400 rounded-l-md;
+  position: relative;
+  overflow: hidden;
+}
+
+.logoanimi {
+  background: url('/logo/ehassa.jpg') no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  /* background-position: 65% 100px; */
+  z-index: 1;
+}
+
+.cessa {
+  background: url('/logo/cessa.jpg') no-repeat;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 180px;
+  height: 100px;
+  background-size: contain;
+  z-index: 2;
+  /* transform: translateX(290%); */
+  animation: cessa 25.5s ease-in 5.9s infinite;
+}
+
+.anumain {
+  background: url('/logo/anumain.png') no-repeat;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  z-index: 3;
+  /* transform: translateX(290%); */
+  animation: anumain 20.5s ease-in 2.9s infinite;
+}
+
+/* css keyframes */
+
+@keyframes cessa {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
+
+@keyframes anumain {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
