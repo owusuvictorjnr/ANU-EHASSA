@@ -1,9 +1,14 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import LoginsLayout from '../components/LoginsLayout';
+import styles from '../styles/Form.module.css';
+import { HiAtSymbol, HiFingerPrint } from 'react-icons/hi';
+import { useState } from 'react';
 
 const Login = () => {
+  const [show, setShow] = useState(false);
   return (
     <>
       <LoginsLayout>
@@ -12,7 +17,9 @@ const Login = () => {
         </Head>
         <section className="w-3/4 mx-auto flex flex-col gap-10">
           <div className="title">
-            <h1 className="text-gray-800 text-4xl font-bold py-10"> ANU</h1>
+            <h1 className="text-gray-500 text-3xl font-bold py-10 capitalize ">
+              welcome to ANU school of enigeneering portal
+            </h1>
             <p className="w-3/4 mx-auto text-gray-400 capitalize">
               login to your dashboard{' '}
             </p>
@@ -21,40 +28,71 @@ const Login = () => {
           {/*Form*/}
 
           <form className="flex flex-col gap-5">
-            <div className="">
+            <div className={styles.input_group}>
               <input
                 type="email"
                 name="email"
-                placeholder="ID / School Email"
-                className=""
+                placeholder="Sudent ID / School Email"
+                className={styles.input_text}
               />
+
+              <span className="icon flex items-center px-4">
+                <HiAtSymbol size={25} />
+              </span>
             </div>
 
-            <div className="{styles.input - group}">
+            <div className={styles.input_group}>
               <input
-                type="password"
+                type={`${show ? 'text' : 'password'}`}
                 name="password"
                 placeholder="Password"
-                className=""
+                className={styles.input_text}
               />
+
+              <span
+                className="icon flex items-center px-4"
+                onClick={() => setShow(!show)}
+              >
+                <HiFingerPrint size={25} />
+              </span>
             </div>
 
             {/*login buttons*/}
             <div className="">
-              <button type="submit">Login</button>
+              <button type="submit" className={styles.button}>
+                Login
+              </button>
             </div>
 
             {/*Sign in using school email address*/}
             <div>
               <div className="">
-                <button type="submit">sign in with your school email</button>
+                <button type="button" className={styles.button_custom}>
+                  {' '}
+                  sign in with your school email{' '}
+                  <Image
+                    src="/logo/microsoft.svg"
+                    alt=""
+                    width={25}
+                    height="25"
+                  />
+                </button>
               </div>
             </div>
 
             {/*Sign in using school index number*/}
             <div>
               <div className="">
-                <button type="submit">sign in with your index number</button>
+                <button type="button" className={styles.button_custom}>
+                  sign in with your index number{' '}
+                  {/*<Image
+                    src="/logo/microsoft.webp"
+                    alt=" svg"
+                    width={'20'}
+                    height="20"
+                  />
+                  TODO:school svg*/}
+                </button>
               </div>
             </div>
 
