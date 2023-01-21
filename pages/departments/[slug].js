@@ -36,12 +36,11 @@ const HomeScreen = ({ department }) => {
   return (
     <Layout title={department.name}>
       <div className="mt-[7rem]">
-        <SubHeaders label="about cessa" />
+        <SubHeaders label="about " />
 
         <div className="bg-red-600 h-[0.3rem] sticky top-0 w-full divide-red-500" />
         <div className="bg-blue-500 min-h-[20rem]">
-          TODO: loreVeniam culpa et proident reprehenderit sunt proident dolore
-          eu nisi pariatur.
+          TODO: About the department.
         </div>
       </div>
 
