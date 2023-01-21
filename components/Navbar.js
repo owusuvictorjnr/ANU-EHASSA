@@ -52,7 +52,7 @@ const Navbar = () => {
 
                 <Link href="/login" className="cursor-pointer">
                   <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
-                    login
+                    sign in
                   </li>
                 </Link>
               </ul>
@@ -63,5 +63,7 @@ const Navbar = () => {
     </div>
   );
 };
+
+
 
 export default Navbar;
