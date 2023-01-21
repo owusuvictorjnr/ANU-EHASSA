@@ -17,7 +17,7 @@ const Login = () => {
         </Head>
         <section className="w-3/4 mx-auto flex flex-col gap-10">
           <div className="title">
-            <h1 className="text-gray-500 text-3xl font-bold py-10 capitalize ">
+            <h1 className="text-white/100 text-3xl font-bold py-10 capitalize ">
               welcome to ANU school of enigeneering portal
             </h1>
             <p className="w-3/4 mx-auto text-gray-400 capitalize">
@@ -99,7 +99,7 @@ const Login = () => {
             {/*bottom*/}
             <p className="text-center text-gray-400">
               don't have an account yet?{' '}
-              <Link href={'/register'} className="text-blue-700">
+              <Link href={'/register'} className="text-blue-700 capitalize">
                 sign up
               </Link>
             </p>
