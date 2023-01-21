@@ -1,9 +1,9 @@
 {
   "cs": {
-    "slug": "cs",
+    "slug": "ce",
     "programmes": "computer science",
     "courses": [
-      "c++",
+      "python",
       "networking",
       "java",
       "c",
@@ -11,33 +11,39 @@
       "artificial inteligence",
       "data science",
       "web tech",
-      "cyber security"
+      "cyber security",
+      "engineering maths"
     ],
     "executives": [
-      [
-        {
-          "name": "owusu victor",
-          "image": "/images/main.jpg",
-          "position": "president"
-        },
-        {
-          "name": "michillina",
-          "image": "/images/main.jpg",
-          "position": "vice president"
-        },
+      {
+        "name": "owusu victor",
+        "image": "/images/main.jpg",
+        "position": "president"
+      },
+      {
+        "name": "michillina",
+        "image": "/images/main.jpg",
+        "position": "vice president"
+      },
 
-        {
-          "name": "eben",
-          "image": "/images/main.jpg",
-          "position": "organizer"
-        },
+      {
+        "name": "eben",
+        "image": "/images/main.jpg",
+        "position": "organizer"
+      },
 
-        {
-          "name": "odikro",
-          "image": "/images/main.jpg",
-          "position": "portal"
-        }
-      ]
+      {
+        "name": "odikro",
+        "image": "/images/main.jpg",
+        "position": "portal"
+      },
+
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "hod"
+      }
     ],
     "associations": [
       "google developer student clubs",
