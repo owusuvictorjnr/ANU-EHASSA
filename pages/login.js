@@ -40,7 +40,6 @@ const Login = () => {
                 <HiAtSymbol size={25} />
               </span>
             </div>
-
             <div className={styles.input_group}>
               <input
                 type={`${show ? 'text' : 'password'}`}
@@ -56,13 +55,14 @@ const Login = () => {
                 <HiFingerPrint size={25} />
               </span>
             </div>
-
             {/*login buttons*/}
             <div className="">
               <button type="submit" className={styles.button}>
                 Login
               </button>
             </div>
+
+            <div className="capitalize font-bold">or</div>
 
             {/*Sign in using school email address*/}
             <div>
@@ -79,23 +79,22 @@ const Login = () => {
                 </button>
               </div>
             </div>
-
             {/*Sign in using school index number*/}
-            <div>
+            {/*<div>
               <div className="">
                 <button type="button" className={styles.button_custom}>
                   sign in with your index number{' '}
-                  {/*<Image
+                  <Image
                     src="/logo/microsoft.webp"
                     alt=" svg"
                     width={'20'}
                     height="20"
                   />
-                  TODO:school svg*/}
+                  TODO:school svg
                 </button>
               </div>
             </div>
-
+            */}
             {/*bottom*/}
             <p className="text-center text-gray-400">
               don't have an account yet?{' '}
