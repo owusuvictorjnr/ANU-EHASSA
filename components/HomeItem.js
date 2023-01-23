@@ -82,8 +82,8 @@ function Guest() {
                   width="150"
                   className="w-full h-[40rem] blur-[0.5rem] object-cover absolute mix-blend-multiply"
                 />
-                // *530#
-                <div className="flex justify-evenly">
+
+                <div className="">
                   <div className="text-3xl capitalize font-serif text-yellow-400 px-8 py-5 pt-20 ">
                     <div className="flex gap-2">
                       <Image
@@ -100,26 +100,19 @@ function Guest() {
                     </div>
                   </div>
 
-                  <div className=" grid grid-cols-1 sm:grid-cols-1  gap-10 px-8 py-5 pt-20 pb-8 lg:grid-cols">
-                    <p className="text-red-500 ">
-                      <span className="text-left">
-                        We are one of the largest, most diverse universities in
-                        the ghana with over 5,000 students in ghana, and a
-                        further 1,000 studying across 20 countries for all
-                        nations University. all nations University was
-                        established by dr. donkor in 1983 for the public benefit
-                        and it is recognized globally. Throughout our great
-                        history, all nations has offered access to a wide range
-                        of academic opportunities. As a world leader in higher
-                        education, the University has pioneered change in the
-                        sector.
-                      </span>
-                    </p>
-                  </div>
-                  <div>
-                    {/*<button>
-                    read more <BsArrowRightShort className="" size={40} />
-                  </button>*/}
+                  <div className=" flex justify-evenly">
+                    <div className="flex justify-end">
+                      {' '}
+                      We are one of the largest, most diverse universities in
+                      the ghana with over 5,000 students in ghana, and a further
+                      1,000 studying across 20 countries for all nations
+                      University. all nations University was established by dr.
+                      donkor in 1983 for the public benefit and it is recognized
+                      globally. Throughout our great history, all nations has
+                      offered access to a wide range of academic opportunities.
+                      As a world leader in higher education, the University has
+                      pioneered change in the sector.
+                    </div>
                   </div>
                 </div>
               </div>
