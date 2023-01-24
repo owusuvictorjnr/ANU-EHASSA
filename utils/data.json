@@ -42,6 +42,24 @@
         "name": "dr oware",
         "image": "/images/main.jpg",
         "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
