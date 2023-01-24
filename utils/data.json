@@ -38,11 +38,10 @@
         "position": "portal"
       },
 
-
       {
         "name": "dr oware",
         "image": "/images/main.jpg",
-        "position": "hod"
+        "position": "H.O.D"
       }
     ],
     "associations": [
@@ -55,7 +54,7 @@
   },
   "ce": {
     "slug": "ce",
-    "programmes": "computer science",
+    "programmes": "computer engineering",
     "courses": [
       "engineering math",
       "networking",
@@ -90,6 +89,30 @@
         "name": "odikro",
         "image": "/images/main.jpg",
         "position": "portal"
+      },
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
@@ -102,7 +125,7 @@
   },
   "bme": {
     "slug": "bme",
-    "programmes": "computer science",
+    "programmes": "biomedical engineering",
     "courses": [
       "image processing",
       "networking",
@@ -136,6 +159,30 @@
         "name": "odikro",
         "image": "/images/main.jpg",
         "position": "portal"
+      },
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
@@ -182,6 +229,30 @@
         "name": "odikro",
         "image": "/images/main.jpg",
         "position": "portal"
+      },
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
@@ -228,6 +299,30 @@
         "name": "odikro",
         "image": "/images/main.jpg",
         "position": "portal"
+      },
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
@@ -274,6 +369,30 @@
         "name": "odikro",
         "image": "/images/main.jpg",
         "position": "portal"
+      },
+
+      {
+        "name": "dr oware",
+        "image": "/images/main.jpg",
+        "position": "H.O.D"
+      },
+
+      {
+        "name": "mr. danso",
+        "image": "/images/main.jpg",
+        "position": "assistant H.O.D"
+      },
+
+      {
+        "name": "mr. ralph",
+        "image": "/images/main.jpg",
+        "position": "patron"
+      },
+
+      {
+        "name": "mr. ampadu",
+        "image": "/images/main.jpg",
+        "position": "assistant patron"
       }
     ],
     "associations": [
