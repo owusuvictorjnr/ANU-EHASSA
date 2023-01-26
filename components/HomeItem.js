@@ -41,7 +41,7 @@ function Guest() {
 
           {/* h-[calc(100vh_-_144px)] */}
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4 pb-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4 pb-5 mx-auto lg:pl-[7rem]">
             {myData.homeScreens.map((departments, _index) => {
               return (
                 <div className="">
