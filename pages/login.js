@@ -20,7 +20,7 @@ const Login = () => {
             <h1 className="text-white/100 text-3xl font-bold py-10 capitalize ">
               welcome to ANU school of enigeneering portal
             </h1>
-            <p className="w-3/4 mx-auto text-gray-400 capitalize">
+            <p className="w-3/4 mx-auto text-white capitalize">
               login to your dashboard{' '}
             </p>
           </div>
@@ -44,17 +44,27 @@ const Login = () => {
               <input
                 type={`${show ? 'text' : 'password'}`}
                 name="password"
-                placeholder="Password"
+                placeholder="Your super secret password"
                 className={styles.input_text}
               />
-
               <span
                 className="icon flex items-center px-4"
                 onClick={() => setShow(!show)}
               >
                 <HiFingerPrint size={25} />
-              </span>
+              </span>{' '}
             </div>
+
+            {/*password reset*/}
+            <div className="flex justify-end">
+              <Link
+                href="/"
+                className="text-blue-500 hover:bg-red-300 hover:text-white hover:px-2 hover:rounded-md "
+              >
+                Forgot password?
+              </Link>
+            </div>
+
             {/*login buttons*/}
             <div className="">
               <button type="submit" className={styles.button}>
@@ -96,7 +106,7 @@ const Login = () => {
             </div>
             */}
             {/*bottom*/}
-            <p className="text-center text-gray-400">
+            <p className="text-center text-white">
               don't have an account yet?{' '}
               <Link href={'/register'} className="text-blue-700 capitalize">
                 sign up
