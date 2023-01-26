@@ -15,10 +15,10 @@ const Register = () => {
       </Head>{' '}
       <section className="w-3/4 mx-auto flex flex-col gap-10">
         <div className="title">
-          <h1 className="text-gray-500 text-2xl font-bold py-10 capitalize ">
+          <h1 className="text-white text-2xl font-bold py-10 capitalize ">
             welcome to ANU school of enigeneering portal
           </h1>
-          <p className="w-3/4 mx-auto text-gray-400 capitalize ">
+          <p className="w-3/4 mx-auto text-white capitalize ">
             register to login to your dashboard{' '}
           </p>
         </div>
@@ -92,7 +92,7 @@ const Register = () => {
           </div>
 
           {/*bottom*/}
-          <p className="text-center text-gray-400">
+          <p className="text-center text-white">
             have an account?{' '}
             <Link href={'/login'} className="text-blue-700 capitalize">
               sign in
