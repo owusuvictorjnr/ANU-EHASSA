@@ -20,7 +20,7 @@
 
 /* for school email & id */
 .button_custom {
-  @apply w-full border border-blue-700 capitalize rounded-md py-3 flex justify-center gap-2 hover:bg-red-200;
+  @apply w-full border border-blue-700 capitalize rounded-md py-3 flex justify-center gap-2 hover:bg-red-200 text-white hover:text-black;
 }
 
 .input_text + * {
