@@ -82,7 +82,16 @@ const HomeScreen = ({ department }) => {
             <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
           </div>
           <div className="min-h-[20rem] bg-red-200 mb-5  p-4 order-4 ">
-            <h1 className="">{department.associations}</h1>
+            <div className="flex flex-col">
+              {department.associations}
+              {/*  <div className='text-3xl capitalize '>
+             <p>google developer student clubs</p>
+                <p>huawei ICT academy</p>
+                <p>microsoft student academy</p>
+                <p>ingressive for good</p>
+                <p>computer science & engineering association of ghana</p>
+            </div>*/}
+            </div>
           </div>
         </div>
       </div>
