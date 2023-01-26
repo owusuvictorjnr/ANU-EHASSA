@@ -72,7 +72,7 @@ const Login = () => {
               </button>
             </div>
 
-            <div className="capitalize font-bold">or</div>
+            <div className="capitalize font-bold text-blue-50/20">or</div>
 
             {/*Sign in using school email address*/}
             <div>
@@ -108,7 +108,7 @@ const Login = () => {
             {/*bottom*/}
             <p className="text-center text-white">
               don't have an account yet?{' '}
-              <Link href={'/register'} className="text-blue-700 capitalize">
+              <Link href={'/register'} className="text-blue-300 capitalize">
                 sign up
               </Link>
             </p>
