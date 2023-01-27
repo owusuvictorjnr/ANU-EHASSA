@@ -10,6 +10,7 @@ import { FaUniversity } from 'react-icons/fa';
 import { HiOutlineLink } from 'react-icons/hi';
 import DateTime from './DateTime';
 import Layout from './Layout';
+import Navbar from './Navbar';
 
 const HomeItem = () => {
   return <div>{Guest()}</div>;
@@ -20,6 +21,7 @@ const HomeItem = () => {
 function Guest() {
   return (
     <>
+      <Navbar />
       <div className=" mx-auto">
         <div className="mt-[7rem]">
           <div className="">
