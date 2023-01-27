@@ -54,7 +54,6 @@ const Login = () => {
                 <HiFingerPrint size={25} />
               </span>{' '}
             </div>
-
             {/*password reset*/}
             <div className="flex justify-end">
               <Link
@@ -64,16 +63,19 @@ const Login = () => {
                 Forgot password?
               </Link>
             </div>
-
             {/*login buttons*/}
-            <div className="">
+            {/* <div className="">
               <button type="submit" className={styles.button}>
                 Login
               </button>
+  </div>*/}
+            <div className="">
+              <Link href={'/students/student'} className={styles.button}>
+                Login
+              </Link>
             </div>
 
             <div className="capitalize font-bold text-blue-50/20">or</div>
-
             {/*Sign in using school email address*/}
             <div>
               <div className="">
