@@ -68,7 +68,7 @@ function Guest() {
 
           {/*About ANU*/}
           <div>
-            <div className="sticky top-[7rem] z-50">
+            <div className="sticky top-[7rem] ">
               <SubHeaders label="about" />
               <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
             </div>
@@ -209,7 +209,7 @@ function Guest() {
 
           <div>
             <div className="mb-5 ">
-              <div className="sticky top-[7rem] z-50">
+              <div className="sticky top-[7rem] ">
                 <SubHeaders label="News & Updates" />
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
               </div>
@@ -335,7 +335,7 @@ function Guest() {
 
           {/*campus tour*/}
           <div>
-            <div className="sticky top-[7rem] z-50">
+            <div className="sticky top-[7rem] ">
               <SubHeaders label="campus tour" />
               <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
             </div>
