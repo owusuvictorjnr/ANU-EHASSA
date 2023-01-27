@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Layout = ({ children, title }) => {
   return (
@@ -12,11 +14,16 @@ const Layout = ({ children, title }) => {
         </Head>
 
         <div className="flex flex-col justify-between min-h-screen">
-          <header>{/* <Navbar /> */}</header>
+          <header>
+            {' '}
+            <Navbar />{' '}
+          </header>
 
           <main className="main">{children}</main>
 
-          <footer className="">{/* <Footer /> */}</footer>
+          <footer className="">
+            <Footer />
+          </footer>
         </div>
       </div>
     </>
