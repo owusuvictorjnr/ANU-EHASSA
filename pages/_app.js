@@ -7,10 +7,10 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />*/}
       {/* <WaterMark /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 }
