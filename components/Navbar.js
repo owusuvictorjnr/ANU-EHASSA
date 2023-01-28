@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
@@ -9,8 +9,31 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 import { useState } from 'react';
+import jsonData from '../utils/data.json';
+import { useRouter } from 'next/router';
 
-const Navbar = () => {
+export async function getServerSideProps(context) {
+  const department = jsonData[context.params.slug];
+  return {
+    props: {
+      department,
+    },
+  };
+}
+
+const Navbar = ({ department }) => {
+  const [data, setData] = useState(jsonData);
+  const { query } = useRouter();
+  const { slug } = query;
+
+  useEffect(() => {
+    const dept = jsonData[slug];
+    setData(dept);
+  }, [jsonData]);
+
+  {
+    /*side Navbar*/
+  }
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -184,6 +207,10 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center">
+          {/* {department.logo}*/}
+          logo
         </div>
       </div>
     </div>
