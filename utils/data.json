@@ -297,27 +297,46 @@
     ],
     "executives": [
       {
-        "name": "king",
+        "name": "diana agiba",
         "image": "/images/main.jpg",
         "position": "president"
       },
       {
-        "name": "grace",
+        "name": " Adamu Saka Abdul Shakur",
         "image": "/images/main.jpg",
         "position": "vice president"
       },
 
       {
-        "name": "eben",
+        "name": "Clement Mantey Annor",
         "image": "/images/main.jpg",
         "position": "organizer"
       },
 
       {
-        "name": "odikro",
+        "name": "Marilyn Yasmine Addison",
         "image": "/images/main.jpg",
-        "position": "portal"
+        "position": "secretary"
       },
+
+      {
+        "name": "Seth Kennedy Nabile",
+        "image": "/images/main.jpg",
+        "position": "Public Relations Officer"
+      },
+
+      {
+        "name": " Sande Solomon",
+        "image": "/images/main.jpg",
+        "position": "Program`s Chairperson"
+      },
+
+      {
+        "name": "Holarli Eric ",
+        "image": "/images/main.jpg",
+        "position": "Treasurer"
+      },
+
 
       {
         "name": "dr oware",
