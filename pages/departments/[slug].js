@@ -27,7 +27,7 @@ const HomeScreen = ({ department }) => {
   // console.log(department.executives);
 
   return (
-    <Layout title={department.name}>
+    <Layout title={department.slug}>
       <div>
         <div className="mt-[7rem]">
           <SubHeaders label="about " programme={department.programmes} />
@@ -49,13 +49,13 @@ const HomeScreen = ({ department }) => {
                   <img
                     src={executive.image}
                     alt={executive.name}
-                    className="rounded-md h-[10rem] w-[15rem] mb-5 mt-[3rem] block border border-gray-100 shadow-md z-100"
+                    className="rounded-full h-[15rem] w-[15rem] mb-5 mt-[3rem] block border border-gray-100 shadow-md z-100 "
                   />
                   <div
                     key={_index.slug}
                     className="text-2xl text-black/80 capitalize"
                   >
-                    {executive.name}
+                    <div className="">{executive.name}</div>
                   </div>
                   <div className="text-1xl capitalize font-serif text-black/70 font-semibold pb-5">
                     <h1> {executive.position}</h1>
@@ -64,6 +64,7 @@ const HomeScreen = ({ department }) => {
               </div>
             ))}
           </div>
+
           <div className="">
             <div className="md:mt-[2rem]">
               <SubHeaders label="courses" />
