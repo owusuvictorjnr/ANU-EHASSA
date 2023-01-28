@@ -2,6 +2,7 @@
   "cs": {
     "slug": "ce",
     "programmes": "computer science",
+    "logo": "/logo/CESSA.png",
     "courses": [
       "python",
       "networking",
@@ -73,6 +74,7 @@
   "ce": {
     "slug": "ce",
     "programmes": "computer engineering",
+    "logo": "/logo/CESSA.png",
     "courses": [
       "engineering math",
       "networking",
@@ -214,6 +216,7 @@
   "nursing": {
     "slug": "nursing",
     "programmes": "nursing",
+    "logo": "/logo/SBASH.png",
     "courses": [
       "human anatomy",
       "networking",
@@ -284,6 +287,7 @@
   "og": {
     "slug": "og",
     "programmes": "oil & gas",
+    "logo": "/logo/spelogo.png",
     "courses": [
       "earth drilling",
       "networking",
@@ -337,7 +341,6 @@
         "position": "Treasurer"
       },
 
-
       {
         "name": "dr oware",
         "image": "/images/main.jpg",
@@ -373,6 +376,7 @@
   "ece": {
     "slug": "ece",
     "programmes": "electronic & comm engineering",
+    "logo": "/logo/ECE.png",
     "courses": [
       "mtn",
       "networking",
