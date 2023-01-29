@@ -48,12 +48,12 @@ const Student = () => {
                 <div className=" pt-8  text-2xl text-white flex-auto justify-end item-center">
                   <ul className="space-x-5 mb-4  flex justify-end items-end lg:justify-end hidden md:flex">
                     <Link href="/" className="cursor-pointer">
-                      <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
                         home
                       </li>
                     </Link>
                     <Link href="/about" className="cursor-pointer">
-                      <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
                         register
                       </li>
                     </Link>
@@ -64,7 +64,7 @@ const Student = () => {
   </Link>*/}
 
                     <Link href="/login" className="cursor-pointer">
-                      <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
                         search
                       </li>
                     </Link>
@@ -105,8 +105,7 @@ const Student = () => {
                       />
 
                       <div className="">
-                        <p className="text-3xl text-[#fcbf49] uppercase">
-                          {' '}
+                        <p className="text-2xl text-[#fcbf49] uppercase">
                           ehassa
                         </p>
                       </div>
