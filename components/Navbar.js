@@ -44,7 +44,7 @@ const Navbar = ({ department }) => {
     <div>
       <div className="shadow-xl h-[7rem]  fixed top-0 z-20 left-0 right-0  bg-yellow-500  flex justify-evenly capitalize text-1xl">
         <div className="flex">
-          <Link href="/home">
+          <Link href="/">
             <Image
               src="/logo/ehassa.jpg"
               alt="cessa"
@@ -64,7 +64,7 @@ const Navbar = ({ department }) => {
         <div className="">
           <nav className="">
             <div className=" mx-5">
-              <div className=" pt-8  text-2xl text-blue-900 font-serif flex-auto justify-end item-center">
+              <div className=" pt-8  text-2xl text-blue-900 flex-auto justify-end item-center">
                 <ul className="space-x-5 mb-4  flex justify-end items-end lg:justify-end hidden md:flex">
                   <Link href="/" className="cursor-pointer">
                     <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
