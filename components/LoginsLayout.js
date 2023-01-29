@@ -11,6 +11,11 @@ const LoginsLayout = ({ children }) => {
             <div className={styles.logoanimi}></div>
             <div className={styles.cessa}></div>
             <div className={styles.anumain}></div>
+            <div className={styles.spe}></div>
+            <div className={styles.ece}></div>
+            <div className={styles.src}></div>
+            <div className={styles.sbahs}></div>
+            <div className={styles.besa}></div>
           </div>
 
           <div className="right flex flex-col justify-evenly">
