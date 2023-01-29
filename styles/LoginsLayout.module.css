@@ -5,13 +5,13 @@
 }
 
 .logoanimi {
-  background: url('/logo/ehassa.jpg') no-repeat;
+  background: url('/logo/ehassa.png') no-repeat;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 0;
-  height: 100%;
+  top: 5%;
+  height: 90%;
   width: 100%;
   background-size: cover;
   /* background-position: 65% 100px; */
@@ -19,10 +19,11 @@
 }
 
 .cessa {
-  background: url('/logo/cessa.jpg') no-repeat;
+  background: url('/logo/CESSA.png') no-repeat;
   position: absolute;
-  top: 65%;
+  top: 85%;
   left: 10%;
+  /* bottom: 10; */
   width: 180px;
   height: 100px;
   background-size: contain;
@@ -32,9 +33,9 @@
 }
 
 .anumain {
-  background: url('/logo/anumain.png') no-repeat;
+  background: url('/logo/anulogo.png') no-repeat;
   position: absolute;
-  top: 65%;
+  top: 85%;
   left: 10%;
   width: 200px;
   height: 100px;
@@ -43,6 +44,61 @@
   /* transform: translateX(290%); */
   animation: anumain 20.5s ease-in 2.9s infinite;
 }
+
+.spe {
+  background: url('/logo/spelogo.png') no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  z-index: 3;
+  /* transform: translateX(290%); */
+  animation: spe 20.5s ease-in 2.9s infinite;
+}
+
+.ece {
+  background: url('/logo/ECE.png') no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  z-index: 3;
+  /* transform: translateX(290%); */
+  animation: ece 20.5s ease-in 2.9s infinite;
+}
+
+.src {
+  background: url('/logo/src.png') no-repeat;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  z-index: 3;
+  /* transform: translateX(290%); */
+  animation: src 20.5s ease-in 2.9s infinite;
+}
+
+.sbahs {
+  background: url('/logo/SBAHS.png') no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  z-index: 3;
+  
+  
+  animation: sbahs 20.5s ease-in 2.9s infinite;
+}
+
+
 
 /* css keyframes */
 
@@ -63,3 +119,48 @@
     transform: translateX(-250);
   }
 }
+
+@keyframes spe {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
+
+@keyframes ece {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
+
+@keyframes src {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
+
+@keyframes sbahs {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+}
+
+/* @keyframes besa {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-250);
+  }
+} */
