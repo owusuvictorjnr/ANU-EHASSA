@@ -159,26 +159,44 @@
     ],
     "executives": [
       {
-        "name": "toni",
+        "name": "Miss Patricia Bonsi",
         "image": "/images/main.jpg",
         "position": "president"
       },
       {
-        "name": "fati",
+        "name": "Mr. Samuel Oteng Dapaah ",
         "image": "/images/main.jpg",
         "position": "vice president"
       },
 
       {
-        "name": "eben",
+        "name": "Miss Georgina Antwi",
         "image": "/images/main.jpg",
-        "position": "organizer"
+        "position": "Secretary"
       },
 
       {
-        "name": "odikro",
+        "name": "Miss Mayfair Owusu-Mensah Boahin",
         "image": "/images/main.jpg",
-        "position": "portal"
+        "position": "Financial secretary"
+      },
+
+      {
+        "name": "Miss Nana Aba Mensah",
+        "image": "/images/main.jpg",
+        "position": "Organizer"
+      },
+
+      {
+        "name": " Mr. John Delali Yekple",
+        "image": "/images/main.jpg",
+        "position": "Assistant Organizer"
+      },
+
+      {
+        "name": "Miss Josephine Owusu ",
+        "image": "/images/main.jpg",
+        "position": "P.R.O"
       },
 
       {
