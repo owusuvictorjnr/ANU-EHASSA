@@ -22,27 +22,55 @@ function Guest() {
   return (
     <>
       <Navbar />
-      <div className=" mx-auto">
-        <div className="mt-[7rem]">
-          <div className="">
-            <div className="bg-yellow-600  px-4  uppercase text-3xl tracking-wide font-serif  flex justify-center text-blue-900 sticky top-[7rem]">
-              <div className="sticky top-[14rem]">
-                <SubHeaders label="welcome to all nations university school of engineering koforidua ghana west africa" />
-                <div className="bg-blue-500 h-[0.1rem]  divide-red-500 sh-underline" />
-              </div>
-            </div>
-
-            <div className=" min-h-[50rem] p-2 ">TODO: Landing Page</div>
-          </div>
-          <div className="sticky top-[7rem]">
-            {/*Departments*/}
-            <SubHeaders label="our departments" />
-            <div className="bg-blue-500 h-[0.1rem] sticky top-0 w-full divide-red-500 sh-underline" />
+      <div className="">
+        <div className="mt-[4rem]">
+          <div className="sticky top-[1rem] md:top-[2rem] text-blue-900 text-sm text-center md:text-xl lg:text-3xl">
+            <SubHeaders
+              label="welcome to all nations university school of engineering
+          koforidua ghana west africa"
+            />
+            <div className="bg-blue-500 h-[0.1rem] sticky top-[4rem] w-full divide-red-500 sh-underline" />
             <div className="divide-y-yellow-600" />
           </div>
 
-          {/* h-[calc(100vh_-_144px)] */}
+          {/*
 
+
+
+      
+        <div className=" uppercase flex justify-center text-center text-sm md:text-xl lg:text-3xl text-blue-900 sticky top-[7rem]">
+          <div className="sticky top-[7rem]">
+            <SubHeaders
+              
+              className=""
+            />
+            <div className="bg-blue-500 h-[0.1rem]  divide-red-500 sh-underline" />
+          </div>
+        </div>
+
+
+
+
+        
+      */}
+          <div className=" min-h-[20rem]">
+            <div>
+              <Image
+                src={'/images/main.jpg'}
+                alt={'/'}
+                width={500}
+                height={500}
+                className="w-full rounded-md  mx-auto flex justify-center px-5 pb-5 h-[20rem] md:w-full md:h-[30rem] lg:h-[40rem]"
+              />
+            </div>
+          </div>
+          <div className="sticky top-[4rem] text-blue-900 text-sm text-center md:text-xl lg:text-3xl">
+            {/*Departments*/}
+            <SubHeaders label="our departments" />
+            <div className="bg-blue-500 h-[0.1rem] sticky top-[4rem] w-full divide-red-500 sh-underline" />
+            <div className="divide-y-yellow-600" />
+          </div>
+          {/* h-[calc(100vh_-_144px)] */}
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2 mb-5 mt-[1rem] rounded-lg border border-gray-100 shadow px-4 pb-5 mx-auto lg:pl-[7rem]">
             {myData.homeScreens.map((departments, _index) => {
               return (
@@ -67,151 +95,159 @@ function Guest() {
               );
             })}
           </div>
-
           {/*About ANU*/}
           <div>
-            <div className="sticky top-[7rem] ">
+            <div className="sticky top-[4rem] z-50 text-blue-900 text-sm text-center md:text-xl lg:text-3xl">
               <SubHeaders label="about" />
               <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
             </div>
-            <div className="mb-5 ">
-              <div className=" min-h-[40rem] relative">
-                {/*Background Image*/}
-                <Image
-                  src="/images/main.jpg"
-                  alt="background image"
-                  height="150"
-                  width="150"
-                  className="w-full h-[40rem] blur-[0.5rem] object-cover absolute mix-blend-multiply"
-                />
-
+            <div className="mb-5">
+              <div className=" min-h-[30rem] relative">
                 <div className="">
-                  <div className="text-3xl capitalize font-serif text-yellow-400 px-8 py-5 pt-20 ">
-                    <div className="flex gap-2">
-                      <Image
-                        src="/logo/anumain.png"
-                        alt="logo"
-                        height="50"
-                        width="50"
-                        className="rounded-full bg-yellow-600 "
-                      />
-                      <div>all nations university</div>
-                    </div>
-                    <div className="grid grid-cols-1 lg:flex text-4xl">
-                      <div className=""> about our</div> university
+                  <div className="flex gap-2 pt-10 px-10 lg:mt-10">
+                    <Image
+                      src="/logo/anumain.png"
+                      alt="logo"
+                      height="50"
+                      width="50"
+                      className="rounded-full bg-yellow-600"
+                    />
+                    <div className="pt-3 capitalize text-blue-700 text-sm md:text-lg">
+                      all nations university
                     </div>
                   </div>
+                  <div className="pt-10 flex justify-center capitalize text-sm text-blue-800 font-bold md:text-2xl lg:text-3xl">
+                    about the school of engineering and allied science
+                  </div>
+                </div>
 
-                  <div className=" flex justify-evenly">
-                    <div className="flex justify-end">
-                      {' '}
-                      We are one of the largest, most diverse universities in
-                      the ghana with over 5,000 students in ghana, and a further
-                      1,000 studying across 20 countries for all nations
-                      University. all nations University was established by dr.
-                      donkor in 1983 for the public benefit and it is recognized
-                      globally. Throughout our great history, all nations has
-                      offered access to a wide range of academic opportunities.
-                      As a world leader in higher education, the University has
-                      pioneered change in the sector.
-                    </div>
+                <div className="pt-5 container mx-auto px-5">
+                  <p className="text-sm text-blue-300 md:text-xl lg:px-[10rem]">
+                    We are one of the largest, most diverse universities in the
+                    ghana with over 5,000 students in ghana, and a further 1,000
+                    studying across 20 countries for all nations University. all
+                    nations University was established by dr. donkor in 1983 for
+                    the public benefit and it is recognized globally. Throughout
+                    our great history, all nations has offered access to a wide
+                    range of academic opportunities. As a world leader in higher
+                    education, the University has pioneered change in the
+                    sector.
+                  </p>
+                  <div className="pt-2 flex justify-center ">
+                    <button
+                      type="submit"
+                      className="bg-[#ee6c4d] py-2 px-5 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                    >
+                      read more
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-blue-900 w-full min-h-[30rem] ">
-                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:space-x-40 px-5 pt-10">
-                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif ">
-                    <ImBooks size={80} className="text-yellow-500" />
-                    <h2>education services</h2>
-                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
-                      <p>
+              <div className="w-full min-h-[30rem]">
+                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
+                  <div className="px-5 py-5">
+                    <div className="flex gap-2">
+                      <ImBooks size={40} className="text-yellow-500" />
+                      <h2 className="pt-1 text-sm text-blue-800 font-bold capitalize lg:text-3xl md:text-xl">
+                        education services
+                      </h2>
+                    </div>
+                    <div className="">
+                      <p className="pt-2 text-sm text-blue-200 md:text-lg lg:text-2xl">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
                         further 1,000 studying across 20 countries for all
                         nations University.
                       </p>
-                      <button
-                        type=""
-                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
-                      >
-                        learn more
-                      </button>
                     </div>
+                    <button
+                      type=""
+                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                    >
+                      learn more
+                    </button>
                   </div>
 
-                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
-                    <HiGlobeEuropeAfrica
-                      size={80}
-                      className="text-yellow-500"
-                    />
-                    <p>international hubs</p>
-
-                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
-                      <p>
+                  <div className="px-5 py-5">
+                    <div className="flex gap-2">
+                      <HiGlobeEuropeAfrica
+                        size={40}
+                        className="text-yellow-500"
+                      />
+                      <h2 className="pt-1 text-sm text-blue-800 font-bold capitalize lg:text-3xl md:text-xl">
+                        education services
+                      </h2>
+                    </div>
+                    <div className="">
+                      <p className="pt-2 text-sm text-blue-200 md:text-lg lg:text-2xl">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
                         further 1,000 studying across 20 countries for all
                         nations University.
                       </p>
-                      <button
-                        type=""
-                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
-                      >
-                        learn more
-                      </button>
                     </div>
+                    <button
+                      type=""
+                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                    >
+                      learn more
+                    </button>
                   </div>
 
-                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
-                    <TbCertificate size={80} className="text-yellow-500" />
-                    <p>bacherkor's and master's</p>
-
-                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
-                      <p>
+                  <div className="px-5 py-5">
+                    <div className="flex gap-2">
+                      <TbCertificate size={40} className="text-yellow-500" />
+                      <h2 className="pt-1 text-sm text-blue-800 font-bold capitalize lg:text-3xl md:text-xl">
+                        education services
+                      </h2>
+                    </div>
+                    <div className="">
+                      <p className="pt-2 text-sm text-blue-200 md:text-lg lg:text-2xl">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
                         further 1,000 studying across 20 countries for all
                         nations University.
                       </p>
-                      <button
-                        type=""
-                        className="flex   hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
-                      >
-                        learn more
-                      </button>
                     </div>
+                    <button
+                      type=""
+                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                    >
+                      learn more
+                    </button>
                   </div>
 
-                  <div className="px-5 py-5 font-bold text-2xl text-white capitalize font-serif">
-                    <FaUniversity size={80} className="text-yellow-500" />
-                    <p>university life</p>
-
-                    <div className="text-sm lowercase font-normal lg:text-2xl md:text-lg">
-                      <p>
+                  <div className="px-5 py-5">
+                    <div className="flex gap-2">
+                      <FaUniversity size={40} className="text-yellow-500" />
+                      <h2 className="pt-1 text-sm text-blue-800 font-bold capitalize lg:text-3xl md:text-xl">
+                        education services
+                      </h2>
+                    </div>
+                    <div className="">
+                      <p className="pt-2 text-sm text-blue-200 md:text-lg lg:text-2xl">
                         We are one of the largest, most diverse universities in
                         the ghana with over 5,000 students in ghana, and a
                         further 1,000 studying across 20 countries for all
                         nations University.
                       </p>
-                      <button
-                        type=""
-                        className="flex sm:text-yellow-300  hover:bg-yellow-600 rounded-md px-2 mb-4 capitalize"
-                      >
-                        learn more
-                      </button>
                     </div>
+                    <button
+                      type=""
+                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                    >
+                      learn more
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
           {/*News & Updates*/}
-
           <div>
             <div className="mb-5 ">
-              <div className="sticky top-[7rem] ">
+              <div className="sticky top-[4rem] text-blue-900 text-sm text-center md:text-xl lg:text-3xl">
                 <SubHeaders label="News & Updates" />
                 <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
               </div>
@@ -263,14 +299,6 @@ function Guest() {
 
                     {/*Quick Links*/}
                     <div className="w-full mb-5 min-h-[10rem] bg-blue-900/90">
-                      {/*<Image
-                        src="/logo/ehassa.jpg"
-                        alt="quick links"
-                        height="150"
-                        width="150"
-                        className="bg-white w-full h-[10rem] blur-[0.5rem] object-cover absolute mix-blend-multiply "
-                      />*/}
-                      TODO: Background image
                       <div className="py-2 px-[8rem] mt-10 w-full ">
                         <div className="flex gap-5 text-white text-4xl capitalize font-bold ">
                           <HiOutlineLink size={30} className="" />
@@ -334,10 +362,9 @@ function Guest() {
               </div>
             </div>
           </div>
-
           {/*campus tour*/}
           <div>
-            <div className="sticky top-[7rem] ">
+            <div className="sticky top-[4rem] text-blue-900 text-sm text-center md:text-xl lg:text-3xl">
               <SubHeaders label="campus tour" />
               <div className="bg-red-600 h-[0.2rem]  w-full sh-underline1" />
             </div>
