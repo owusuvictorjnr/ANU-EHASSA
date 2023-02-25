@@ -1,6 +1,5 @@
 import HomeItem from '../components/HomeItem';
 import Layout from '../components/Layout';
-import WaterMark from './waterMark';
 
 const Home = () => {
   return (
@@ -12,9 +11,4 @@ const Home = () => {
   );
 };
 
-
-
-
-
 export default Home;
-
