@@ -5,7 +5,7 @@ import styles from '../styles/LoginsLayout.module.css';
 const LoginsLayout = ({ children }) => {
   return (
     <Layout>
-      <div className="flex h-screen bg-gradient-to-br from-yellow-300 to-red-100 pt-36">
+      <div className="flex h-screen">
         <div className="m-auto bg-blue-900 rounded-md w-3/5 min-h-3/4 grid lg:grid-cols-2 ">
           <div className={styles.imgStyle}>
             <div className={styles.logoanimi}></div>
