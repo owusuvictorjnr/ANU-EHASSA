@@ -17,7 +17,7 @@ const Login = () => {
         </Head>
         <section className="w-3/4 mx-auto flex flex-col gap-10">
           <div className="title">
-            <h1 className="text-white/100 text-3xl font-bold py-10 capitalize ">
+            <h1 className="text-white/100 text-3xl font-bold py-10 capitalize">
               welcome to ANU school of enigeneering portal
             </h1>
             <p className="w-3/4 mx-auto text-white capitalize">
@@ -70,7 +70,7 @@ const Login = () => {
               </button>
   </div>*/}
             <div className="">
-              <Link href={'/students/student'} className={styles.button}>
+              <Link href={'/dashboard/student'} className={styles.button}>
                 Login
               </Link>
             </div>
