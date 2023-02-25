@@ -15,14 +15,17 @@ const Layout = ({ children, title }) => {
 
         <div className="flex flex-col justify-between min-h-screen">
           <header>
-            {' '}
-            <Navbar />{' '}
+            {/*
+          <Navbar />
+        */}
           </header>
 
           <main className="main">{children}</main>
 
           <footer className="">
-            <Footer />
+          {/*
+          <Footer />
+        */}
           </footer>
         </div>
       </div>
