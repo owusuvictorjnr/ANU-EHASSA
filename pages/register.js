@@ -13,7 +13,7 @@ const Register = () => {
       <Head>
         <title>Register</title>
       </Head>{' '}
-      <section className="w-3/4 mx-auto flex flex-col gap-10">
+      <section className="w-3/4 mx-auto flex flex-col gap-10 mb-10">
         <div className="title">
           <h1 className="text-white text-2xl font-bold py-10 capitalize ">
             welcome to ANU school of enigeneering portal
@@ -38,12 +38,25 @@ const Register = () => {
           </span>
         </div>
 
-        <form className="flex flex-col gap-5">
+        <form className="flex flex-col gap-5 pb-10">
           <div className={styles.input_group}>
             <input
               type="email "
               name="email "
               placeholder=" School Email"
+              className={styles.input_text}
+            />
+
+            <span className="icon flex items-center px-4">
+              <HiAtSymbol size={25} />
+            </span>
+          </div>
+
+          <div className={styles.input_group}>
+            <input
+              type="email "
+              name="email "
+              placeholder="Semester"
               className={styles.input_text}
             />
 
