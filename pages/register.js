@@ -5,9 +5,18 @@ import { HiAtSymbol, HiFingerPrint, HiOutlineUser } from 'react-icons/hi';
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useForm } from 'react-hook-form';
 
 const Register = () => {
   const [show, setShow] = useState({ password: false, cpassword: false });
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+
   return (
     <LoginsLayout>
       <Head>
@@ -25,20 +34,67 @@ const Register = () => {
 
         {/*Form*/}
 
-        <div className={styles.input_group}>
-          <input
-            type="id"
-            name="id"
-            placeholder="Sudent ID "
-            className={styles.input_text}
-          />
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-5 pb-10"
+        >
+          <div className={styles.input_group}>
+            <input
+              type="text"
+              // name="id"
+              placeholder="First Name"
+              className={styles.input_text}
+              {...register('First name', { required: true, maxLength: 80 })}
+            />
 
-          <span className="icon flex items-center px-4">
-            <HiOutlineUser size={25} />
-          </span>
-        </div>
+            <span className="icon flex items-center px-4">
+              <HiOutlineUser size={25} />
+            </span>
+          </div>
 
-        <form className="flex flex-col gap-5 pb-10">
+          <div className={styles.input_group}>
+            <input
+              type="text"
+              // name="lname"
+              placeholder="Middle Name"
+              className={styles.input_text}
+              {...register('First name', { required: false, maxLength: 80 })}
+            />
+
+            <span className="icon flex items-center px-4">
+              <HiOutlineUser size={25} />
+            </span>
+          </div>
+          <div className={styles.input_group}>
+            <input
+              type="text"
+              // name="id"
+              placeholder="Last Name"
+              className={styles.input_text}
+              {...register('Last name', { required: true, maxLength: 80})}
+            />
+
+            <span className="icon flex items-center px-4">
+              <HiOutlineUser size={25} />
+            </span>
+          </div>
+
+          <div className={styles.input_group}>
+            <input
+              type="text"
+              name="id"
+              placeholder="Sudent ID "
+              className={styles.input_text}
+              {...register('Student ID', { required: true, maxLength: 80 })}
+            />
+
+            <span className="icon flex items-center px-4">
+              <HiOutlineUser size={25} />
+            </span>
+          </div>
+
+          {/*
+        
           <div className={styles.input_group}>
             <input
               type="email "
@@ -51,13 +107,19 @@ const Register = () => {
               <HiAtSymbol size={25} />
             </span>
           </div>
+        */}
 
           <div className={styles.input_group}>
             <input
-              type="email "
-              name="email "
+              type="number "
+              name="semester "
               placeholder="Semester"
               className={styles.input_text}
+              {...register('Semester', {
+                required: true,
+                max: 12,
+                maxLength: 12,
+              })}
             />
 
             <span className="icon flex items-center px-4">
@@ -98,11 +160,16 @@ const Register = () => {
           </div>
 
           {/*login buttons*/}
+
           <div className="">
-            <button type="submit" className={styles.button}>
+            <button onSubmit={} type="submit"  className={styles.button}>
               sign up
             </button>
           </div>
+          {/*
+          <input type="submit" />
+        
+        */}
 
           {/*bottom*/}
           <p className="text-center text-white">
