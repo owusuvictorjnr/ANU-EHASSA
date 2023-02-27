@@ -23,21 +23,21 @@ const Student = () => {
       </Head>
 
       <div className="h-screen mx-auto ">
-        <div className=" bg-[#1d3557] h-20  border-b fixed top-0  left-0 right-0  flex justify-between capitalize items-center">
-          <div className="flex items-center mx-10 px-5">
+        <div className=" bg-[#1d3557] h-16  border-b fixed top-0  left-0 right-0  flex justify-between capitalize items-center">
+          <div className="flex items-center mx-10 ">
             <Link href="/">
               <Image
                 src="/logo/ehassa.png"
                 alt="cessa"
                 width="300"
                 height="300"
-                className=" rounded-full h-14 w-14  md:h-16 md:w-16"
+                className="rounded-full h-14 w-14 md:h-16 md:w-16"
               />
             </Link>
           </div>
 
-          <div>
-            <h1 className="text-white text-sm md:text-xl lg:text-2xl">
+          <div className="">
+            <h1 className="flex text-center text-white text-sm md:text-xl lg:text-2xl">
               dashboard
             </h1>
           </div>
@@ -49,12 +49,12 @@ const Student = () => {
                 <div className=" pt-8  text-2xl text-white flex-auto justify-end item-center">
                   <ul className="space-x-5 mb-6 px-5 mx-10 hidden md:flex">
                     <Link href="/" className="cursor-pointer">
-                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded md:text-xl lg:text-2xl hover:underline duration-500">
                         home
                       </li>
                     </Link>
                     <Link href="/about" className="cursor-pointer">
-                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 md:text-xl lg:text-2xl rounded hover:underline duration-500">
                         register
                       </li>
                     </Link>
@@ -65,7 +65,7 @@ const Student = () => {
   </Link>*/}
 
                     <Link href="/login" className="cursor-pointer">
-                      <li className="hover:bg-[#ffb703] py-1 px-2 rounded hover:underline duration-500">
+                      <li className="hover:bg-[#ffb703] py-1 px-2 md:text-xl lg:text-2xl rounded hover:underline duration-500">
                         search
                       </li>
                     </Link>
