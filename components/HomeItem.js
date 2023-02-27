@@ -135,12 +135,12 @@ function Guest() {
                     sector.
                   </p>
                   <div className="pt-2 flex justify-center ">
-                    <button
-                      type="submit"
+                    <Link
+                      href={'/about'}
                       className="bg-[#ee6c4d] py-2 px-5 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
                     >
                       read more
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -162,12 +162,14 @@ function Guest() {
                         nations University.
                       </p>
                     </div>
-                    <button
-                      type=""
-                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
-                    >
-                      learn more
-                    </button>
+                    <div className="pt-3">
+                      <Link
+                        href={'/about'}
+                        className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                      >
+                        rearn more
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5">
@@ -188,12 +190,14 @@ function Guest() {
                         nations University.
                       </p>
                     </div>
-                    <button
-                      type=""
-                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
-                    >
-                      learn more
-                    </button>
+                    <div className="pt-3">
+                      <Link
+                        href={'/about'}
+                        className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                      >
+                        learn more
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5">
@@ -211,12 +215,14 @@ function Guest() {
                         nations University.
                       </p>
                     </div>
-                    <button
-                      type=""
-                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
-                    >
-                      learn more
-                    </button>
+                    <div className="pt-3">
+                      <Link
+                        href={'/about'}
+                        className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                      >
+                        learn more
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="px-5 py-5">
@@ -234,12 +240,14 @@ function Guest() {
                         nations University.
                       </p>
                     </div>
-                    <button
-                      type=""
-                      className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
-                    >
-                      learn more
-                    </button>
+                    <div className='pt-3'>
+                      <Link
+                        href={'/about'}
+                        className="bg-[#ee6c4d] py-2 px-5 mt-3 rounded-full capitalize text-sm text-white md:text-xl hover:bg-gray-100 hover:text-blue-600 border-2 border-amber-200 duration-500"
+                      >
+                        learn more
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
