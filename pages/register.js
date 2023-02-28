@@ -22,21 +22,23 @@ const Register = () => {
       <Head>
         <title>Register</title>
       </Head>{' '}
-      <section className="w-3/4 mx-auto flex flex-col gap-10 mb-10">
-        <div className="title">
-          <h1 className="text-white text-2xl font-bold py-10 capitalize ">
-            welcome to ANU school of enigeneering portal
-          </h1>
-          <p className="w-3/4 mx-auto text-white capitalize ">
+      <section className="w-3/2 px-2 mx-auto flex flex-col gap-1 mb-10 md:w-3/4 ">
+        <div className="font-bold border-b-2">
+          {/*
+        <h1 className="text-white text-sm md:text-xl font-bold capitalize ">
+          welcome to ANU school of enigeneering portal
+        </h1>
+      */}
+          <h1 className="w-3/4 mx-auto text-white text-sm md:text-xl capitalize ">
             register to login to your dashboard{' '}
-          </p>
+          </h1>
         </div>
 
         {/*Form*/}
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-5 pb-10"
+          className="flex flex-col gap-3 pb-5 pt-5"
         >
           <div className={styles.input_group}>
             <input
@@ -48,7 +50,7 @@ const Register = () => {
             />
 
             <span className="icon flex items-center px-4">
-              <HiOutlineUser size={25} />
+              <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
@@ -62,7 +64,7 @@ const Register = () => {
             />
 
             <span className="icon flex items-center px-4">
-              <HiOutlineUser size={25} />
+              <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
           <div className={styles.input_group}>
@@ -71,11 +73,11 @@ const Register = () => {
               // name="id"
               placeholder="Last Name"
               className={styles.input_text}
-              {...register('Last name', { required: true, maxLength: 80})}
+              {...register('Last name', { required: true, maxLength: 80 })}
             />
 
             <span className="icon flex items-center px-4">
-              <HiOutlineUser size={25} />
+              <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
@@ -89,7 +91,7 @@ const Register = () => {
             />
 
             <span className="icon flex items-center px-4">
-              <HiOutlineUser size={25} />
+              <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
@@ -123,7 +125,7 @@ const Register = () => {
             />
 
             <span className="icon flex items-center px-4">
-              <HiAtSymbol size={25} />
+              <HiAtSymbol size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
@@ -139,7 +141,7 @@ const Register = () => {
               className="icon flex items-center px-4"
               onClick={() => setShow({ ...show, password: !show.password })}
             >
-              <HiFingerPrint size={25} />
+              <HiFingerPrint size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
@@ -155,14 +157,18 @@ const Register = () => {
               className="icon flex items-center px-4"
               onClick={() => setShow({ ...show, cpassword: !show.cpassword })}
             >
-              <HiFingerPrint size={25} />
+              <HiFingerPrint size={20} className="h-5 w-5 md:h-10 md:w-10" />
             </span>
           </div>
 
           {/*login buttons*/}
 
           <div className="">
-            <button onSubmit={} type="submit"  className={styles.button}>
+            <button
+              onSubmit={handleSubmit}
+              type="submit"
+              className={styles.button}
+            >
               sign up
             </button>
           </div>
