@@ -4,7 +4,7 @@
 }
 
 .input_text {
-  @apply w-full py-4 px-6 border rounded-xl bg-slate-50;
+  @apply w-full py-2 md:py-4 px-3 border rounded-xl bg-slate-50;
   @apply focus:outline-none border-none;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .button:hover {
-  @apply bg-gradient-to-r from-red-100 to-red-200 border-blue-500;
+  @apply bg-gradient-to-r from-white to-white border-blue-500;
   @apply text-gray-700 border;
 }
 
