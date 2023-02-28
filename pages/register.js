@@ -15,8 +15,14 @@ const schema = yup.object({
   LastName: yup.string().required('Last Name required'),
   StudentId: yup.string().required('Student ID required'),
   Semester: yup.string().required(),
-  Password: yup.string().required('Password required'),
-  Cpassword: yup.string().required('Confirm Password'),
+  Password: yup
+    .string()
+    .min(6, 'Password must be at least 6 characters long')
+    .required('Password required'),
+  Cpassword: yup
+    .string()
+    .required('Confirm Password')
+    .oneOf([yup.ref('Password')], 'Password must be match'),
 });
 
 const Register = () => {
@@ -41,7 +47,7 @@ const Register = () => {
       <Head>
         <title>Register</title>
       </Head>{' '}
-      <section className="w-3/2 px-2 mx-auto flex flex-col gap-1 mb-10 md:w-3/4 ">
+      <section className="w-3/2 px-2 mx-auto flex flex-col gap-1 mb-10 md:w-3/4">
         <div className="font-bold border-b-2">
           {/*
         <h1 className="text-white text-sm md:text-xl font-bold capitalize ">
