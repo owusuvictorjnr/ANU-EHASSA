@@ -14,7 +14,7 @@ const schema = yup.object({
   // MiddleName: yup.string().required().optional(),
   LastName: yup.string().required('Last Name required'),
   StudentId: yup.string().required('Student ID required'),
-  Semester: yup.string().required(),
+  Semester: yup.number().required(),
   Password: yup
     .string()
     .min(6, 'Password must be at least 6 characters long')
@@ -36,7 +36,7 @@ const Register = () => {
     resolver: yupResolver(schema),
   });
 
-  console.log(errors);
+  // console.log(errors);
 
   const formSubmit = (data) => {
     console.log(data);
@@ -63,6 +63,8 @@ const Register = () => {
 
         <form
           onSubmit={handleSubmit(formSubmit)}
+          action="/api/register"
+          method="post"
           className="flex flex-col gap-3 pb-5 pt-5"
         >
           {/*first name*/}
@@ -70,6 +72,7 @@ const Register = () => {
             <div className={styles.input_group}>
               <input
                 type="text"
+                name="firstName"
                 placeholder="First Name"
                 className={styles.input_text}
                 {...register('FirstName')}
@@ -91,6 +94,7 @@ const Register = () => {
             <div className={styles.input_group}>
               <input
                 type="text"
+                name="middleName"
                 placeholder="Middle Name"
                 className={styles.input_text}
                 {...register('MiddleName')}
@@ -107,6 +111,7 @@ const Register = () => {
             <div className={styles.input_group}>
               <input
                 type="text"
+                name="lastName"
                 placeholder="Last Name"
                 className={styles.input_text}
                 {...register('LastName', { required: true })}
@@ -129,6 +134,7 @@ const Register = () => {
             <div className={styles.input_group}>
               <input
                 type="text"
+                name="student_id"
                 placeholder="Sudent ID "
                 className={styles.input_text}
                 {...register('StudentId')}
@@ -166,6 +172,7 @@ const Register = () => {
             <div className={styles.input_group}>
               <input
                 type="number"
+                name="semester"
                 placeholder="Semester"
                 // value={''}
                 max={15}
