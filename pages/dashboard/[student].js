@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 import { useState } from 'react';
 import Head from 'next/head';
+import { BsSearch } from 'react-icons/bs';
 
 const Student = () => {
   {
@@ -62,11 +63,11 @@ const Student = () => {
                       <li className="hover:bg-white py-1 px-2 rounded hover:underline duration-500">
                         read projects
                       </li>
-  </Link>*/}
+                    </Link>*/}
 
                     <Link href="/login" className="cursor-pointer">
                       <li className="hover:bg-[#ffb703] py-1 px-2 md:text-xl lg:text-2xl rounded hover:underline duration-500">
-                        search
+                        <BsSearch />
                       </li>
                     </Link>
                   </ul>
@@ -151,6 +152,28 @@ const Student = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        {/*Body starts here*/}
+        <div className="pt-[4rem]">
+          {/*upload or read project field*/}
+          <div className="flex justify-center px-10 pt-10">
+            <h1 className="text-sm text-[#001d3d] uppercase font-bold md:text-xl lg:text-2xl">
+              upload or read projects
+            </h1>
+          </div>
+          {/*grid*/}
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            {/*upload field*/}
+
+            <div className="bg-red-300 min-h-[20rem] mx-5 flex justify-center md:w-[25rem] mt-5">
+              <h1 className="flex justify-center text-sm text-[#003566] capitalize md:text-xl lg:text-2xl">
+                upload project
+              </h1>
+
+              <label htmlFor=""></label>
+            </div>
+            <div>read project</div>
           </div>
         </div>
       </div>
