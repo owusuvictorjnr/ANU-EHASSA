@@ -27,12 +27,12 @@ const Login = () => {
 
           {/*Form*/}
 
-          <form className="flex flex-col gap-5">
+          <form action="/pages/api/login" className="flex flex-col gap-5">
             <div className={styles.input_group}>
               <input
-                type="email"
-                name="email"
-                placeholder="Sudent ID / School Email"
+                type="text"
+                name="studentID"
+                placeholder="Sudent ID"
                 className={styles.input_text}
               />
 
