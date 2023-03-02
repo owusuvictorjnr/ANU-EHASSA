@@ -10,19 +10,19 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 const schema = yup.object({
-  FirstName: yup.string().required('First Name required'),
+  firstName: yup.string().required('First Name required'),
   // MiddleName: yup.string().required().optional(),
-  LastName: yup.string().required('Last Name required'),
-  StudentId: yup.string().required('Student ID required'),
-  Semester: yup.number().required(),
-  Password: yup
+  lastName: yup.string().required('Last Name required'),
+  studentId: yup.string().required('Student ID required'),
+  semester: yup.number().required('Semester required'),
+  password: yup
     .string()
     .min(6, 'Password must be at least 6 characters long')
     .required('Password required'),
-  Cpassword: yup
+  cpassword: yup
     .string()
     .required('Confirm Password')
-    .oneOf([yup.ref('Password')], 'Password must be match'),
+    .oneOf([yup.ref('password')], 'Password must be match'),
 });
 
 const Register = () => {
@@ -49,11 +49,6 @@ const Register = () => {
       </Head>{' '}
       <section className="w-3/2 px-2 mx-auto flex flex-col gap-1 mb-10 md:w-3/4">
         <div className="font-bold border-b-2">
-          {/*
-        <h1 className="text-white text-sm md:text-xl font-bold capitalize ">
-          welcome to ANU school of enigeneering portal
-        </h1>
-      */}
           <h1 className="w-3/4 mx-auto text-white text-sm md:text-xl capitalize ">
             register to login to your dashboard{' '}
           </h1>
@@ -63,8 +58,8 @@ const Register = () => {
 
         <form
           onSubmit={handleSubmit(formSubmit)}
-          action="/api/register"
-          method="post"
+          action="/pages/api/register"
+          method="POST"
           className="flex flex-col gap-3 pb-5 pt-5"
         >
           {/*first name*/}
@@ -75,16 +70,16 @@ const Register = () => {
                 name="firstName"
                 placeholder="First Name"
                 className={styles.input_text}
-                {...register('FirstName')}
+                {...register('firstName')}
               />
 
               <span className="icon flex items-center px-4">
                 <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
               </span>
             </div>
-            {errors.FirstName && (
+            {errors.firstName && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.FirstName.message}
+                {errors.firstName.message}
               </div>
             )}
           </div>
@@ -97,7 +92,7 @@ const Register = () => {
                 name="middleName"
                 placeholder="Middle Name"
                 className={styles.input_text}
-                {...register('MiddleName')}
+                {...register('middleName')}
               />
 
               <span className="icon flex items-center px-4">
@@ -114,7 +109,7 @@ const Register = () => {
                 name="lastName"
                 placeholder="Last Name"
                 className={styles.input_text}
-                {...register('LastName', { required: true })}
+                {...register('lastName')}
               />
 
               <span className="icon flex items-center px-4">
@@ -122,9 +117,9 @@ const Register = () => {
               </span>
             </div>
 
-            {errors.LastName && (
+            {errors.lastName && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.LastName.message}
+                {errors.lastName.message}
               </div>
             )}
           </div>
@@ -137,16 +132,16 @@ const Register = () => {
                 name="student_id"
                 placeholder="Sudent ID "
                 className={styles.input_text}
-                {...register('StudentId')}
+                {...register('studentId')}
               />
 
               <span className="icon flex items-center px-4">
                 <HiOutlineUser size={20} className="h-5 w-5 md:h-10 md:w-10" />
               </span>
             </div>
-            {errors.StudentId && (
+            {errors.studentId && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.StudentId.message}
+                {errors.studentId.message}
               </div>
             )}
           </div>
@@ -178,16 +173,16 @@ const Register = () => {
                 max={15}
                 min={1}
                 className={styles.input_text}
-                {...register('Semester')}
+                {...register('semester')}
               />
 
               <span className="icon flex items-center px-4">
                 <HiAtSymbol size={20} className="h-5 w-5 md:h-10 md:w-10" />
               </span>
             </div>
-            {errors.Semester && (
+            {errors.semester && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.Semester.message}
+                {errors.semester.message}
               </div>
             )}
           </div>
@@ -200,7 +195,7 @@ const Register = () => {
                 name="password"
                 placeholder="Password"
                 className={styles.input_text}
-                {...register('Password')}
+                {...register('password')}
               />
 
               <span
@@ -211,9 +206,9 @@ const Register = () => {
               </span>
             </div>
 
-            {errors.Password && (
+            {errors.password && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.Password.message}
+                {errors.password.message}
               </div>
             )}
           </div>
@@ -226,7 +221,7 @@ const Register = () => {
                 name="cpassword"
                 placeholder="Confirm Password"
                 className={styles.input_text}
-                {...register('Cpassword')}
+                {...register('cpassword')}
               />
 
               <span
@@ -236,9 +231,9 @@ const Register = () => {
                 <HiFingerPrint size={20} className="h-5 w-5 md:h-10 md:w-10" />
               </span>
             </div>
-            {errors.Cpassword && (
+            {errors.cpassword && (
               <div className="text-red-500 text-sm md:text-xl">
-                {errors.Cpassword.message}
+                {errors.cpassword.message}
               </div>
             )}
           </div>
