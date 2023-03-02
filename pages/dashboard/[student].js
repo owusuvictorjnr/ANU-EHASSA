@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-
+import styles from '../../styles/Form.module.css';
 import { useState } from 'react';
 import Head from 'next/head';
 import { BsSearch } from 'react-icons/bs';
@@ -25,7 +25,7 @@ const Student = () => {
 
       <div className="h-screen mx-auto ">
         <div className=" bg-[#1d3557] h-16  border-b fixed top-0  left-0 right-0  flex justify-between capitalize items-center">
-          <div className="flex items-center mx-10 ">
+          <div className="flex items-center px-5 ">
             <Link href="/">
               <Image
                 src="/logo/ehassa.png"
@@ -37,7 +37,7 @@ const Student = () => {
             </Link>
           </div>
 
-          <div className="">
+          <div className="flex justify-center">
             <h1 className="flex text-center text-white text-sm md:text-xl lg:text-2xl">
               dashboard
             </h1>
@@ -163,15 +163,137 @@ const Student = () => {
             </h1>
           </div>
           {/*grid*/}
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
             {/*upload field*/}
 
-            <div className="bg-red-300 min-h-[20rem] mx-5 flex justify-center md:w-[25rem] mt-5">
-              <h1 className="flex justify-center text-sm text-[#003566] capitalize md:text-xl lg:text-2xl">
-                upload project
-              </h1>
+            <div className=" bg-red-300 min-h-[40rem] flex justify-center px-5 lg:w-[50rem] mt-5">
+              <div className="flex flex-col">
+                <h1 className="flex justify-center text-sm text-[#003566] capitalize font-bold mt-5 md:text-xl lg:text-2xl">
+                  upload project
+                </h1>
+                <form>
+                  {/*name*/}
+                  <div className="flex justify-center flex-col">
+                    <label
+                      htmlFor="username"
+                      className="flex justify-center mt-3"
+                    >
+                      student name
+                    </label>
+                    <input
+                      type="text"
+                      name="username"
+                      // value=""
+                      placeholder="Full Name"
+                      className="px-4 mt-2 py-2 flex justify-center rounded md:h-10"
+                    />
+                  </div>
+                  {/*school*/}
+                  <div className="flex justify-center flex-col">
+                    <label
+                      htmlFor="school"
+                      className="flex justify-center mt-3"
+                    >
+                      school of
+                    </label>
+                    <select className="rounded px-3 py-2 mt-2 uppercase text-sm md:text-xl">
+                      <option value="default">Select</option>
+                      <option>Business</option>
+                      <option>Engineering & Allied Science</option>
+                    </select>
+                  </div>
+                  {/*eng department*/}
+                  <div className="flex justify-center flex-col">
+                    <label
+                      htmlFor="department"
+                      className="flex justify-center mt-3"
+                    >
+                      department
+                    </label>
+                    <select className="rounded px-3 py-2 mt-2 uppercase text-sm md:text-xl">
+                      <option value="default">Select</option>
+                      <option>Computer Science & Engineering</option>
+                      <option>Biomedical & Engineering</option>
+                      <option>Nursing</option>
+                      <option>Oil & Gas</option>
+                      <option>Electronic & Communication</option>
 
-              <label htmlFor=""></label>
+                      <option value="" disabled>
+                        -----------------------------------------
+                      </option>
+                      <option>Finance</option>
+                      <option>Economics</option>
+                      <option>HR</option>
+                      <option>Banking</option>
+                      <option>Resource</option>
+                    </select>
+                  </div>
+                  {/*file upload*/}
+                  <div className="upload">
+                    <label htmlFor="" className="flex justify-center mt-3">
+                      upload file
+                    </label>
+                    <input
+                      type="file"
+                      name="file"
+                      // value=""
+                      className="mx-5 px-3 mt-2 py-2 flex justify-center rounded md:h-10"
+                    />
+                  </div>
+                  {/*date*/}
+                  <div className="flex justify-center flex-col">
+                    <label htmlFor="date" className="flex justify-center mt-3">
+                      date
+                    </label>
+                    <input
+                      type="datetime-local"
+                      name="uploadting-time"
+                      value=""
+                      className="px-4 mt-2 py-2 flex justify-center rounded md:h-10"
+                    />
+                  </div>
+                  {/*supervisor*/}
+                  <div className="flex justify-center flex-col">
+                    <label
+                      htmlFor="supervisor"
+                      className="flex justify-center mt-3"
+                    >
+                      supervisor
+                    </label>
+                    <input
+                      type="text"
+                      name="text"
+                      // value=""
+                      placeholder="Full Name"
+                      className="px-4 mt-2 py-2 flex justify-center rounded md:h-10"
+                    />
+                  </div>
+
+                  {/*student telphone num*/}
+                  <div className="flex justify-center flex-col">
+                    <label htmlFor="phone" className="flex justify-center mt-3">
+                      your telephone number
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      // value=""
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      min={10}
+                      max={12}
+                      // placeholder="Phone number"
+                      className="px-4 mt-2 py-2 flex justify-center rounded md:h-10"
+                    />
+                  </div>
+
+                  {/*submit button*/}
+                  <div className="pt-5">
+                    <button type="submit" className={styles.button}>
+                      submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div>read project</div>
           </div>
