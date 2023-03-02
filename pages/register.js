@@ -254,10 +254,13 @@ const Register = () => {
         
         */}
 
-          {/*bottom*/}
+          {/*Login bottom*/}
           <p className="text-center text-white">
             have an account?{' '}
-            <Link href={'/login'} className="text-blue-700 capitalize">
+            <Link
+              href={'/login'}
+              className="text-blue-700 hover:text-white capitalize"
+            >
               sign in
             </Link>
           </p>
