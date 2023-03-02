@@ -17,9 +17,6 @@ const Login = () => {
         </Head>
         <section className="w-3/4 mx-auto flex flex-col gap-10">
           <div className="title">
-            <h1 className="text-white/100 text-3xl font-bold py-10 capitalize">
-              welcome to ANU school of enigeneering portal
-            </h1>
             <p className="w-3/4 mx-auto text-white capitalize">
               login to your dashboard{' '}
             </p>
@@ -58,7 +55,7 @@ const Login = () => {
             <div className="flex justify-end">
               <Link
                 href="/"
-                className="text-blue-500 hover:bg-red-300 hover:text-white hover:px-2 hover:rounded-md "
+                className="text-blue-500 hover:text-white hover:px-2 hover:rounded-md "
               >
                 Forgot password?
               </Link>
@@ -68,45 +65,13 @@ const Login = () => {
               <button type="submit" className={styles.button}>
                 Login
               </button>
-  </div>*/}
-            <div className="">
+            </div>*/}
+            <div className={styles.button}>
               <Link href={'/dashboard/student'} className={styles.button}>
                 Login
               </Link>
             </div>
 
-            <div className="capitalize font-bold text-blue-50/20">or</div>
-            {/*Sign in using school email address*/}
-            <div>
-              <div className="">
-                <button type="button" className={styles.button_custom}>
-                  {' '}
-                  sign in with your school email{' '}
-                  <Image
-                    src="/logo/microsoft.svg"
-                    alt=""
-                    width={25}
-                    height="25"
-                  />
-                </button>
-              </div>
-            </div>
-            {/*Sign in using school index number*/}
-            {/*<div>
-              <div className="">
-                <button type="button" className={styles.button_custom}>
-                  sign in with your index number{' '}
-                  <Image
-                    src="/logo/microsoft.webp"
-                    alt=" svg"
-                    width={'20'}
-                    height="20"
-                  />
-                  TODO:school svg
-                </button>
-              </div>
-            </div>
-            */}
             {/*bottom*/}
             <p className="text-center text-white">
               don't have an account yet?{' '}
