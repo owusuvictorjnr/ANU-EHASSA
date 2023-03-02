@@ -1,37 +1,37 @@
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
-  FirstName: {
+  firstName: {
     type: String,
     required: true,
   },
 
-  MiddleName: {
+  middleName: {
     type: String,
     required: false,
   },
 
-  LastName: {
+  lastName: {
     type: String,
     required: true,
   },
 
-  StudentId: {
+  studentId: {
     type: String,
     required: true,
   },
 
-  Semester: {
+  semester: {
     type: Number,
     required: true,
   },
 
-  Password: {
+  password: {
     type: String,
     required: true,
   },
 
-  Password: {
+  cpassword: {
     type: String,
     required: true,
   },
